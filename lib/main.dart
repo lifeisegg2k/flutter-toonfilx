@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,20 +9,19 @@ class App extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // iOS風
-    // return CupertinoApp()
-    // Android風
+    // CupertinoApp() iOS風
+    // MaterialApp()  Android風
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
           title: const Text(
-            "Hello Flutter!",
+            'Hello Flutter!',
             style: TextStyle(color: Colors.white),
           ),
           backgroundColor: Colors.blue,
         ),
         body: const Center(
-          child: Text("Hello world!"),
+          child: Text('Hello world!'),
         ),
       ),
     );
