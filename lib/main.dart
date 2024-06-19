@@ -16,7 +16,7 @@ class App extends StatelessWidget {
         backgroundColor: const Color(0xFF181818),
         body: Padding(
           padding: const EdgeInsets.symmetric(
-            horizontal: 40,
+            horizontal: 20,
           ),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -74,10 +74,11 @@ class App extends StatelessWidget {
                 height: 30,
               ),
               Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Container(
                     decoration: BoxDecoration(
-                        color: Colors.amber,
+                        color: const Color(0xFFF1B33B),
                         borderRadius: BorderRadius.circular(45)),
                     child: const Padding(
                       padding: EdgeInsets.symmetric(
@@ -92,6 +93,24 @@ class App extends StatelessWidget {
                       ),
                     ),
                   ),
+                  Container(
+                    decoration: BoxDecoration(
+                        color: const Color(0xFF1F2123),
+                        borderRadius: BorderRadius.circular(45)),
+                    child: const Padding(
+                      padding: EdgeInsets.symmetric(
+                        vertical: 20,
+                        horizontal: 40,
+                      ),
+                      child: Text(
+                        'Request',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 20,
+                        ),
+                      ),
+                    ),
+                  ),
                 ],
               ),
             ],
@@ -101,3 +120,27 @@ class App extends StatelessWidget {
     );
   }
 }
+
+/**
+  vscode in settings.json
+
+  "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.rulers": [80],
+    "editor.selectionHighlight": false,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": "off",
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "always"
+    },
+  },
+  "dart.previewFlutterUiGuides": true,
+  "dart.openDevTools": "flutter",
+  "dart.debugExternalPackageLibraries": true,
+  "dart.debugSdkLibraries": false
+*/
