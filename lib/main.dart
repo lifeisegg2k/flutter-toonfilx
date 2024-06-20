@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'services/api_service.dart';
 import 'screens/home_screen.dart';
 import 'screens/pomodors_screen.dart';
 import 'widgets/transform_card.dart';
@@ -24,7 +23,7 @@ class App extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       home: HomeScreen(),
     );
   }
