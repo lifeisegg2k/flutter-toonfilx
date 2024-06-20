@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'services/api_service.dart';
+import 'screens/home_screen.dart';
 import 'screens/pomodors_screen.dart';
 import 'widgets/transform_card.dart';
 import 'widgets/round_button.dart';
@@ -11,7 +13,21 @@ void main() {
   // runApp(const AppStateful());
 
   // POMODORS APP
-  runApp(const AppPomodors());
+  // runApp(const AppPomodors());
+
+  // webtoon App
+  runApp(const App());
+}
+
+class App extends StatelessWidget {
+  const App({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const MaterialApp(
+      home: HomeScreen(),
+    );
+  }
 }
 
 class AppPomodors extends StatelessWidget {
