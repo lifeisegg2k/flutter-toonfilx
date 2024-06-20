@@ -3,10 +3,14 @@ import 'widgets/transform_card.dart';
 import 'widgets/round_button.dart';
 
 void main() {
+  // Card 1st
   // runApp(const AppWallets());
+
+  // Stateful lifecycle
   runApp(const AppStateful());
 }
 
+// Stateful lifecycle
 class AppStateful extends StatefulWidget {
   const AppStateful({super.key});
 
@@ -81,29 +85,22 @@ class MyLargeTitle extends StatefulWidget {
 }
 
 class _MyLargeTitleState extends State<MyLargeTitle> {
-  /// flutter의 생명주기
-  /// 1. initState()
-  /// build를 하기 전에 항상 먼저 실행된다.
-  /// 대표적으로 API를 불러올 때 사용된다.
-  /// 2.dispose()
-  /// 화면에서 사라질 때 실행한다.
-
   @override
   void initState() {
     super.initState();
-    print('initState!');
+    // print('initState!');
   }
 
   @override
   void dispose() {
     //lifecycle
     super.dispose();
-    print('dispose!\n######');
+    // print('dispose!\n######');
   }
 
   @override
   Widget build(BuildContext context) {
-    print('build!');
+    // print('build!');
     return Text(
       'My Large Title',
       style: TextStyle(
@@ -114,7 +111,7 @@ class _MyLargeTitleState extends State<MyLargeTitle> {
   }
 }
 
-/// Card 1st
+// Card 1st
 class AppWallets extends StatelessWidget {
   const AppWallets({super.key});
 
