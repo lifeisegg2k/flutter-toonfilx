@@ -21,7 +21,7 @@ class CurrencyCard extends StatelessWidget {
     return Container(
       clipBehavior: Clip.hardEdge,
       decoration: BoxDecoration(
-        color: isInverted ? Colors.white : const Color(0xFF1F2123),
+        color: isInverted ? Colors.white : _blackColor,
         borderRadius: BorderRadius.circular(25),
       ),
       child: Padding(
@@ -55,7 +55,7 @@ class CurrencyCard extends StatelessWidget {
                       currencyUnit,
                       style: TextStyle(
                         color: isInverted
-                            ? _blackColor.withOpacity(0.8)
+                            ? _blackColor
                             : Colors.white.withOpacity(0.8),
                         fontSize: 20,
                       ),
