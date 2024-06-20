@@ -3,11 +3,57 @@ import 'widgets/transform_card.dart';
 import 'widgets/round_button.dart';
 
 void main() {
+  // runApp(const AppWallets());
   runApp(const App());
 }
 
-class App extends StatelessWidget {
+class App extends StatefulWidget {
   const App({super.key});
+
+  @override
+  State<App> createState() => _AppState();
+}
+
+class _AppState extends State<App> {
+  int counter = 0;
+  void onClicked() {
+    setState(() {
+      counter = counter + 1;
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        backgroundColor: const Color(0xFFF4EDDB),
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              const Text(
+                'Click Count',
+                style: TextStyle(fontSize: 30),
+              ),
+              Text(
+                '$counter',
+                style: const TextStyle(fontSize: 30),
+              ),
+              IconButton(
+                iconSize: 40,
+                onPressed: onClicked,
+                icon: const Icon(Icons.add_box_rounded),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class AppWallets extends StatelessWidget {
+  const AppWallets({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -129,27 +175,3 @@ class App extends StatelessWidget {
     );
   }
 }
-
-/**
-  vscode in settings.json
-
-  "[dart]": {
-    "editor.formatOnSave": true,
-    "editor.formatOnType": true,
-    "editor.rulers": [80],
-    "editor.selectionHighlight": false,
-    "editor.suggest.snippetsPreventQuickSuggestions": false,
-    "editor.suggestSelection": "first",
-    "editor.tabCompletion": "onlySnippets",
-    "editor.wordBasedSuggestions": "off",
-    "editor.tabSize": 2,
-    "editor.insertSpaces": true,
-    "editor.codeActionsOnSave": {
-      "source.fixAll": "always"
-    },
-  },
-  "dart.previewFlutterUiGuides": true,
-  "dart.openDevTools": "flutter",
-  "dart.debugExternalPackageLibraries": true,
-  "dart.debugSdkLibraries": false
-*/
