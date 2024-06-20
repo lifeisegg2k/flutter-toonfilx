@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 import '../services/api_service.dart';
 import '../models/webtoon_model.dart';
 import '../widgets/webtoon_widget.dart';
@@ -90,7 +89,7 @@ ListView makeListBuilder(AsyncSnapshot<dynamic> snapshot) {
     scrollDirection: Axis.horizontal,
     itemCount: snapshot.data!.length,
     itemBuilder: (context, index) {
-      print(index);
+      // print(index);
       var webtoon = snapshot.data![index];
       return Text(webtoon.title);
     },
@@ -130,8 +129,8 @@ class _HomeScreenOldState extends State<HomeScreenOld> {
   // 8. build
   @override
   Widget build(BuildContext context) {
-    print(webtoons);
-    print(isLoading);
+    // print(webtoons);
+    // print(isLoading);
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
