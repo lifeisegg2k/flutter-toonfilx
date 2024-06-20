@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import '../services/api_service.dart';
 import '../models/webtoon_model.dart';
+import '../widgets/webtoon_widget.dart';
 
 class HomeScreen extends StatelessWidget {
   HomeScreen({super.key});
@@ -26,32 +28,24 @@ class HomeScreen extends StatelessWidget {
       ),
       body: FutureBuilder(
         future: webtoons,
-        builder: (context, snapshot) {
+        builder: (context, AsyncSnapshot snapshot) {
           if (snapshot.hasData) {
-            // return ListView(
-            //   children: [
-            //     for (var webtoon in snapshot.data!) Text(webtoon.title)
-            //   ],
-            // );
-            // return ListView.builder(
-            //   scrollDirection: Axis.horizontal,
-            //   itemCount: snapshot.data!.length,
-            //   itemBuilder: (context, index) {
-            //     print(index);
-            //     var webtoon = snapshot.data![index];
-            //     return Text(webtoon.title);
-            //   },
-            // );
-            return ListView.separated(
-              scrollDirection: Axis.horizontal,
-              itemCount: snapshot.data!.length,
-              itemBuilder: (context, index) {
-                var webtoon = snapshot.data![index];
-                return Text(webtoon.title);
-              },
-              separatorBuilder: (context, index) => const SizedBox(
-                width: 20,
-              ),
+            // ### Ex) Nomal ListView #######
+            // return makeListNomal(snapshot);
+            //
+            // ### Ex) ListView.builder #######
+            // return makeListBuilder(snapshot);
+            //
+            // ### ListView.separated #######
+            return Column(
+              children: [
+                const SizedBox(
+                  height: 50,
+                ),
+                Expanded(
+                  child: makeList(snapshot),
+                ),
+              ],
             );
           }
           return const Center(
@@ -61,6 +55,46 @@ class HomeScreen extends StatelessWidget {
       ),
     );
   }
+
+  ListView makeList(AsyncSnapshot<dynamic> snapshot) {
+    return ListView.separated(
+      scrollDirection: Axis.horizontal,
+      itemCount: snapshot.data!.length,
+      padding: const EdgeInsets.symmetric(
+        vertical: 10,
+        horizontal: 20,
+      ),
+      itemBuilder: (context, index) {
+        var webtoon = snapshot.data![index];
+        return Webtoon(
+          title: webtoon.title,
+          thumb: webtoon.thumb,
+          id: webtoon.id,
+        );
+      },
+      separatorBuilder: (context, index) => const SizedBox(
+        width: 40,
+      ),
+    );
+  }
+}
+
+ListView makeListNomal(AsyncSnapshot<dynamic> snapshot) {
+  return ListView(
+    children: [for (var webtoon in snapshot.data!) Text(webtoon.title)],
+  );
+}
+
+ListView makeListBuilder(AsyncSnapshot<dynamic> snapshot) {
+  return ListView.builder(
+    scrollDirection: Axis.horizontal,
+    itemCount: snapshot.data!.length,
+    itemBuilder: (context, index) {
+      print(index);
+      var webtoon = snapshot.data![index];
+      return Text(webtoon.title);
+    },
+  );
 }
 
 class HomeScreenOld extends StatefulWidget {
