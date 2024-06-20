@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'screens/home_screen.dart';
+import 'screens/pomodors_screen.dart';
 import 'widgets/transform_card.dart';
 import 'widgets/round_button.dart';
 
@@ -10,12 +10,12 @@ void main() {
   // Stateful lifecycle
   // runApp(const AppStateful());
 
-  // POMODORO APP
-  runApp(const AppPomodoro());
+  // POMODORS APP
+  runApp(const AppPomodors());
 }
 
-class AppPomodoro extends StatelessWidget {
-  const AppPomodoro({super.key});
+class AppPomodors extends StatelessWidget {
+  const AppPomodors({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -31,7 +31,7 @@ class AppPomodoro extends StatelessWidget {
         ),
         cardColor: const Color(0xFFF4EDDB),
       ),
-      home: const HomeScreen(),
+      home: const PomodorsScreen(),
     );
   }
 }
