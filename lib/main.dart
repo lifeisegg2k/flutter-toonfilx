@@ -4,41 +4,60 @@ import 'widgets/round_button.dart';
 
 void main() {
   // runApp(const AppWallets());
-  runApp(const App());
+  runApp(const AppStateful());
 }
 
-class App extends StatefulWidget {
-  const App({super.key});
+class AppStateful extends StatefulWidget {
+  const AppStateful({super.key});
 
   @override
-  State<App> createState() => _AppState();
+  State<AppStateful> createState() => _AppStatefulState();
 }
 
-class _AppState extends State<App> {
-  int counter = 0;
+class _AppStatefulState extends State<AppStateful> {
+  List<int> numbers = [];
+  bool showTitle = true;
+
+  void toggleTitle() {
+    setState(() {
+      showTitle = !showTitle;
+    });
+  }
+
   void onClicked() {
     setState(() {
-      counter = counter + 1;
+      numbers.add(numbers.length);
+      // print(numbers);
     });
   }
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData(
+        textTheme: const TextTheme(
+          titleLarge: TextStyle(
+            color: Colors.red,
+          ),
+        ),
+      ),
       home: Scaffold(
         backgroundColor: const Color(0xFFF4EDDB),
         body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
+              showTitle ? const MyLargeTitle() : const Text('Nothing'),
+              IconButton(
+                iconSize: 40,
+                onPressed: toggleTitle,
+                icon: const Icon(Icons.remove_red_eye),
+              ),
               const Text(
                 'Click Count',
                 style: TextStyle(fontSize: 30),
               ),
-              Text(
-                '$counter',
-                style: const TextStyle(fontSize: 30),
-              ),
+              for (var n in numbers) Text('$n'),
               IconButton(
                 iconSize: 40,
                 onPressed: onClicked,
@@ -52,6 +71,50 @@ class _AppState extends State<App> {
   }
 }
 
+class MyLargeTitle extends StatefulWidget {
+  const MyLargeTitle({
+    super.key,
+  });
+
+  @override
+  State<MyLargeTitle> createState() => _MyLargeTitleState();
+}
+
+class _MyLargeTitleState extends State<MyLargeTitle> {
+  /// flutter의 생명주기
+  /// 1. initState()
+  /// build를 하기 전에 항상 먼저 실행된다.
+  /// 대표적으로 API를 불러올 때 사용된다.
+  /// 2.dispose()
+  /// 화면에서 사라질 때 실행한다.
+
+  @override
+  void initState() {
+    super.initState();
+    print('initState!');
+  }
+
+  @override
+  void dispose() {
+    //lifecycle
+    super.dispose();
+    print('dispose!\n######');
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    print('build!');
+    return Text(
+      'My Large Title',
+      style: TextStyle(
+        fontSize: 30,
+        color: Theme.of(context).textTheme.titleLarge?.color ?? Colors.blue,
+      ),
+    );
+  }
+}
+
+/// Card 1st
 class AppWallets extends StatelessWidget {
   const AppWallets({super.key});
 
