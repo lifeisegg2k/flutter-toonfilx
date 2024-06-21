@@ -1,7 +1,7 @@
 import 'dart:io';
 import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'package:toonflix/screens/main_screen.dart';
+import 'package:toonflix/screens/top_screen.dart';
 import 'package:toonflix/screens/home_screen.dart';
 import 'package:toonflix/screens/pomodors_screen.dart';
 import 'package:toonflix/widgets/transform_card.dart';
@@ -56,21 +56,21 @@ class App extends StatelessWidget {
           child: ListView(
             scrollDirection: Axis.horizontal, //これで横並びにできる。
             children: const [
-              MainList(
+              TopScreen(
                 listTitle: "Design",
                 listImagePath: 'images/AppWallets.png',
               ),
               SizedBox(
                 width: 25,
               ),
-              MainList(
-                listTitle: "Porodors",
+              TopScreen(
+                listTitle: "Pomodors",
                 listImagePath: 'images/AppPomodors.png',
               ),
               SizedBox(
                 width: 25,
               ),
-              MainList(
+              TopScreen(
                 listTitle: "Webtoon",
                 listImagePath: 'images/AppWallets.png',
               ),

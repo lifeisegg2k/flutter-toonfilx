@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
 
-class MainList extends StatefulWidget {
+class TopScreen extends StatefulWidget {
   final String listTitle, listImagePath;
 
-  const MainList({
+  const TopScreen({
     super.key,
     required this.listTitle,
     required this.listImagePath,
   });
 
   @override
-  State<MainList> createState() => _MainListState();
+  State<TopScreen> createState() => _TopScreenState();
 }
 
-class _MainListState extends State<MainList> {
+class _TopScreenState extends State<TopScreen> {
   @override
   Widget build(BuildContext context) {
     return Column(

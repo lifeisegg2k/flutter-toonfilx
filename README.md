@@ -18,8 +18,8 @@ samples, guidance on mobile development, and a full API reference.
 ## 内容
 
 - Design
-  - ![Design](./images/AppWallets.png)
-- Promodors
-  - ![Design](./images/AppPomodors.png)
+  - <img src="./images/AppWallets.png" alt="Design" style="width:200px;"/>
+- Pomodors
+  - <img src="./images/AppPomodors.png" alt="Pomodors" style="width:200px;"/>
 - Webtoon
-  - ![Design](./images/AppWebtoon.png)
+  - <img src="./images/AppWebtoon.png" alt="Webtoon" style="width:200px;"/>
