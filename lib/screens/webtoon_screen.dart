@@ -3,8 +3,10 @@ import 'package:toonflix/services/api_service.dart';
 import 'package:toonflix/models/webtoon_model.dart';
 import 'package:toonflix/widgets/webtoon_widget.dart';
 
-class HomeScreen extends StatelessWidget {
-  HomeScreen({super.key});
+class WebToonScreen extends StatelessWidget {
+  WebToonScreen({
+    super.key,
+  });
 
   final Future<List<WebtoonModel>> webtoons = ApiService.getTodaysToons();
 
@@ -96,14 +98,14 @@ ListView makeListBuilder(AsyncSnapshot<dynamic> snapshot) {
   );
 }
 
-class HomeScreenOld extends StatefulWidget {
-  const HomeScreenOld({super.key});
+class WebToonScreenOld extends StatefulWidget {
+  const WebToonScreenOld({super.key});
 
   @override
-  State<HomeScreenOld> createState() => _HomeScreenOldState();
+  State<WebToonScreenOld> createState() => _WebToonScreenOldState();
 }
 
-class _HomeScreenOldState extends State<HomeScreenOld> {
+class _WebToonScreenOldState extends State<WebToonScreenOld> {
   List<WebtoonModel> webtoons = [];
   bool isLoading = true;
 

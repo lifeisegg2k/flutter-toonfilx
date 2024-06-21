@@ -5,10 +5,10 @@ import 'package:toonflix/models/webtoon_detail_model.dart';
 import 'package:toonflix/models/webtoon_episode_model.dart';
 import 'package:toonflix/widgets/episode_widget.dart';
 
-class DetailScreen extends StatefulWidget {
+class WebtoonDetailScreen extends StatefulWidget {
   final String title, thumb, id;
 
-  const DetailScreen({
+  const WebtoonDetailScreen({
     super.key,
     required this.title,
     required this.thumb,
@@ -16,10 +16,10 @@ class DetailScreen extends StatefulWidget {
   });
 
   @override
-  State<DetailScreen> createState() => _DetailScreenState();
+  State<WebtoonDetailScreen> createState() => _WebtoonDetailScreenState();
 }
 
-class _DetailScreenState extends State<DetailScreen> {
+class _WebtoonDetailScreenState extends State<WebtoonDetailScreen> {
   late Future<WebtoonDetailModel> webtoon;
   late Future<List<WebtoonEpisodeModel>> episodes;
   // Obtain shared preferences.

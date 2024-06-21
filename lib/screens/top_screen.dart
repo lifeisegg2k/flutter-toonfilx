@@ -1,49 +1,53 @@
 import 'package:flutter/material.dart';
+import 'package:toonflix/widgets/top_widget.dart';
 
-class TopScreen extends StatefulWidget {
-  final String listTitle, listImagePath;
-
+class TopScreen extends StatelessWidget {
   const TopScreen({
     super.key,
-    required this.listTitle,
-    required this.listImagePath,
   });
 
   @override
-  State<TopScreen> createState() => _TopScreenState();
-}
-
-class _TopScreenState extends State<TopScreen> {
-  @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Flexible(
-          flex: 1,
-          child: Container(
-            alignment: Alignment.centerRight,
-            child: Text(
-              widget.listTitle,
-              style: TextStyle(
-                color: Theme.of(context).cardColor,
-                fontSize: 26,
-                fontWeight: FontWeight.w600,
-              ),
-            ),
+    return Scaffold(
+      backgroundColor: Colors.indigoAccent,
+      appBar: AppBar(
+        elevation: 2,
+        backgroundColor: Colors.white38,
+        foregroundColor: Colors.black54,
+        title: const Text(
+          "Lecture - Flutter",
+          style: TextStyle(
+            fontSize: 24,
+            fontWeight: FontWeight.bold,
           ),
         ),
-        Flexible(
-          flex: 6,
-          child: Container(
-            alignment: Alignment.topCenter,
-            child: Image.asset(
-              widget.listImagePath,
-              width: MediaQuery.of(context).size.width * 0.60,
+      ),
+      body: Padding(
+        padding: const EdgeInsets.all(20),
+        child: ListView(
+          scrollDirection: Axis.horizontal, //これで横並びにできる。
+          children: const [
+            TopWidget(
+              listTitle: "Design",
+              listImagePath: 'images/AppWallets.png',
             ),
-          ),
+            SizedBox(
+              width: 25,
+            ),
+            TopWidget(
+              listTitle: "Pomodors",
+              listImagePath: 'images/AppPomodors.png',
+            ),
+            SizedBox(
+              width: 25,
+            ),
+            TopWidget(
+              listTitle: "Webtoon",
+              listImagePath: 'images/AppWebtoon.png',
+            ),
+          ],
         ),
-      ],
+      ),
     );
   }
 }
-//

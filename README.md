@@ -23,3 +23,16 @@ samples, guidance on mobile development, and a full API reference.
   - <img src="./images/AppPomodors.png" alt="Pomodors" style="width:200px;"/>
 - Webtoon
   - <img src="./images/AppWebtoon.png" alt="Webtoon" style="width:200px;"/>
+  - <img src="./images/AppWebtoonDetail.png" alt="Webtoon" style="width:200px;"/>
+
+## Flow
+
+- ./lib/main.dart --
+  - main()          |
+    - App()         |
+                    - ./lib/screens/top_screen.dart
+      - TopScreen()
+                        - ./lib/widgets/top_widget.dart
+        - TopWidget()
+
+        -

@@ -65,6 +65,7 @@ flutter:
   assets:
     - images/AppWallets.png
     - images/AppPomodors.png
+    - images/AppWebtoon.png
 
   # To add assets to your application, add an assets section, like this:
   # assets:
