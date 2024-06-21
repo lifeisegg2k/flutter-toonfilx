@@ -1,8 +1,8 @@
 import 'dart:convert' show jsonDecode;
 import 'package:http/http.dart' as http;
-import '../models/webtoon_model.dart';
-import '../models/webtoon_detail_model.dart';
-import '../models/webtoon_episode_model.dart';
+import 'package:toonflix/models/webtoon_model.dart';
+import 'package:toonflix/models/webtoon_detail_model.dart';
+import 'package:toonflix/models/webtoon_episode_model.dart';
 
 class ApiService {
   static const String baseUrl =

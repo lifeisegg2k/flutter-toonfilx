@@ -1,10 +1,11 @@
 import 'dart:io';
 import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'screens/home_screen.dart';
-import 'screens/pomodors_screen.dart';
-import 'widgets/transform_card.dart';
-import 'widgets/round_button.dart';
+import 'package:toonflix/screens/main_screen.dart';
+import 'package:toonflix/screens/home_screen.dart';
+import 'package:toonflix/screens/pomodors_screen.dart';
+import 'package:toonflix/widgets/transform_card.dart';
+import 'package:toonflix/widgets/round_button.dart';
 
 class MyHttpOverrides extends HttpOverrides {
   @override
@@ -32,6 +33,57 @@ void main() {
 
 class App extends StatelessWidget {
   const App({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        backgroundColor: Colors.indigoAccent,
+        appBar: AppBar(
+          elevation: 2,
+          backgroundColor: Colors.white38,
+          foregroundColor: Colors.black54,
+          title: const Text(
+            "Lecture - Flutter",
+            style: TextStyle(
+              fontSize: 24,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+        ),
+        body: Padding(
+          padding: const EdgeInsets.all(20),
+          child: ListView(
+            scrollDirection: Axis.horizontal, //これで横並びにできる。
+            children: const [
+              MainList(
+                listTitle: "Design",
+                listImagePath: 'images/AppWallets.png',
+              ),
+              SizedBox(
+                width: 25,
+              ),
+              MainList(
+                listTitle: "Porodors",
+                listImagePath: 'images/AppPomodors.png',
+              ),
+              SizedBox(
+                width: 25,
+              ),
+              MainList(
+                listTitle: "Webtoon",
+                listImagePath: 'images/AppWallets.png',
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class AppToon extends StatelessWidget {
+  const AppToon({super.key});
 
   @override
   Widget build(BuildContext context) {
