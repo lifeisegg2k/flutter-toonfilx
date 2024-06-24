@@ -42,7 +42,7 @@ class TopScreen extends StatelessWidget {
             ),
             const TopWidget(
               listTitle: "Lifecycle",
-              listImagePath: 'images/AppPomodors.png',
+              listImagePath: 'images/AppLifecycle.png',
               listDesc: 'Stateless and Stateful',
               listNextScreen: LifecycelScreen(),
             ),
