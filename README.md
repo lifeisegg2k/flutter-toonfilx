@@ -4,13 +4,22 @@ A new Flutter project.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+```sh
+❯ flutter --version
+Flutter 3.22.2 • channel stable • https://github.com/flutter/flutter.git
+Framework • revision 761747bfc5 (3 weeks ago) • 2024-06-05 22:15:13 +0200
+Engine • revision edd8546116
+Tools • Dart 3.4.3 • DevTools 2.34.3
+```
 
-A few resources to get you started if this is your first Flutter project:
+## 内容
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Design
+  - <img src="./images/AppWallets.png" alt="Design" style="width:200px;"/>
+- Lifecycle
+  - <img src="./images/AppLifecycle.png" alt="Lifecycle" style="width:200px;"/>
+- Pomodors
+  - <img src="./images/AppPomodors.png" alt="Pomodors" style="width:200px;"/>
+- Webtoon
+  - <img src="./images/AppWebtoon.png" alt="Webtoon" style="width:200px;"/>
+  - <img src="./images/AppWebtoonDetail.png" alt="Webtoondetail" style="width:200px;"/>
