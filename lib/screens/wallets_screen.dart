@@ -15,9 +15,6 @@ class WalletsScreen extends StatelessWidget {
         elevation: 2,
         backgroundColor: Colors.lightBlue,
         foregroundColor: Colors.white,
-        // leading: BackButton(
-        //   onPressed: () => Navigator.pop(context, false),
-        // ),
         title: const Text(
           "Design - Wallet",
           style: TextStyle(

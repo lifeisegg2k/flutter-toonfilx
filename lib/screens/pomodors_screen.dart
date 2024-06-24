@@ -61,6 +61,18 @@ class _PomodorsScreenState extends State<PomodorsScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Theme.of(context).colorScheme.primary,
+      appBar: AppBar(
+        elevation: 2,
+        backgroundColor: Colors.lightBlue,
+        foregroundColor: Colors.white,
+        title: const Text(
+          "Pomodors",
+          style: TextStyle(
+            fontSize: 24,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+      ),
       body: Column(
         children: [
           Flexible(
