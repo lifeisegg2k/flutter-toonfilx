@@ -34,7 +34,6 @@ case ( Webtoon )
   while(Transform exist?)
     :./widgets/episode_widget.dart;
   endwhile
-  :Naver Webtoon Viewer
   #palegreen:Naver Webtoon Viewer;
   stop
 @enduml
