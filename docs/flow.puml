@@ -1,0 +1,40 @@
+@startuml flowchart
+start
+:main.dart;
+:./screens/top_screen.dart;
+while(TopWidget exist?)
+    :./widgets/top_widget.dart;
+  endwhile
+switch (select case?)
+case ( Design )
+  :./screens/wallets_screen.dart;
+  while(RoundButton exist?)
+    :./widgets/round_button.dart;
+  endwhile
+  while(Transform exist?)
+    :./widgets/transform_card.dart;
+    :./widgets/currency_card.dart;
+  endwhile
+  #palegreen:Display wallets design;
+  stop
+case ( Lifecycle )
+  :./screens/lifecycle_screen.dart;
+  #palegreen:Show/hide text, counting;
+  stop
+case ( Pomodors )
+  :./screens/pomodors_screen.dart;
+  #palegreen:Pomodoro Timer clone;
+  stop
+case ( Webtoon )
+  :./screens/webtoon_screen.dart;
+  while(Webtoon exist?)
+    :./widgets/webtoon_widget.dart;
+  endwhile
+  :./screens/webtoon_detail_screen.dart;
+  while(Transform exist?)
+    :./widgets/episode_widget.dart;
+  endwhile
+  :Naver Webtoon Viewer
+  #palegreen:Naver Webtoon Viewer;
+  stop
+@enduml

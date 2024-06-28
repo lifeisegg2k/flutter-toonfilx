@@ -12,6 +12,10 @@ Engine • revision edd8546116
 Tools • Dart 3.4.3 • DevTools 2.34.3
 ```
 
+## Flow
+
+![Flow](./docs/flowchart.png)
+
 ## 内容
 
 - Design
