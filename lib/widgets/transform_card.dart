@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'currency_card.dart';
+import 'package:toonflix/widgets/currency_card.dart';
 
 class TransformCard extends StatelessWidget {
   final double order;

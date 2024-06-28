@@ -1,0 +1,215 @@
+// 20240620203111
+// https://webtoon-crawler.nomadcoders.workers.dev/800770/episodes
+
+[
+  {
+    "thumb": "https://image-comic.pstatic.net/webtoon/800770/91/thumbnail_202x120_63846a28-f73f-473b-93a0-3088411e363a.jpg",
+    "id": "91",
+    "title": "91화",
+    "rating": "9.97",
+    "date": "24.06.19"
+  },
+  {
+    "thumb": "https://image-comic.pstatic.net/webtoon/800770/90/thumbnail_202x120_d13467b3-926c-48fb-b66b-20e25ea67efd.jpg",
+    "id": "90",
+    "title": "90화",
+    "rating": "9.96",
+    "date": "24.06.12"
+  },
+  {
+    "thumb": "https://image-comic.pstatic.net/webtoon/800770/89/thumbnail_202x120_ecf73d94-6d2d-4ca5-902e-e05068ee76d1.jpg",
+    "id": "89",
+    "title": "89화",
+    "rating": "9.97",
+    "date": "24.06.05"
+  },
+  {
+    "thumb": "https://image-comic.pstatic.net/webtoon/800770/88/thumbnail_202x120_b98816d3-51d7-42f5-8eb0-069aa17a6494.jpg",
+    "id": "88",
+    "title": "88화",
+    "rating": "9.97",
+    "date": "24.05.29"
+  },
+  {
+    "thumb": "https://image-comic.pstatic.net/webtoon/800770/87/thumbnail_202x120_3858a133-09d2-4d38-af06-8f0041d2c50e.jpg",
+    "id": "87",
+    "title": "87화",
+    "rating": "9.96",
+    "date": "24.05.22"
+  },
+  {
+    "thumb": "https://image-comic.pstatic.net/webtoon/800770/86/thumbnail_202x120_ff572fe4-dc71-42ea-b502-c823f446047e.jpg",
+    "id": "86",
+    "title": "86화",
+    "rating": "9.98",
+    "date": "24.05.15"
+  },
+  {
+    "thumb": "https://image-comic.pstatic.net/webtoon/800770/85/thumbnail_202x120_abdb800e-3933-4be0-91c9-bb8ce9350a4d.jpg",
+    "id": "85",
+    "title": "85화",
+    "rating": "9.97",
+    "date": "24.05.08"
+  },
+  {
+    "thumb": "https://image-comic.pstatic.net/webtoon/800770/84/thumbnail_202x120_db764ea8-ad5a-49f8-a64e-eef44a42ec42.jpg",
+    "id": "84",
+    "title": "84화",
+    "rating": "9.97",
+    "date": "24.05.01"
+  },
+  {
+    "thumb": "https://image-comic.pstatic.net/webtoon/800770/83/thumbnail_202x120_44e2b4aa-6909-4384-a21d-2bd7aeff0bb0.jpg",
+    "id": "83",
+    "title": "83화",
+    "rating": "9.97",
+    "date": "24.04.24"
+  },
+  {
+    "thumb": "https://image-comic.pstatic.net/webtoon/800770/82/thumbnail_202x120_ffa85af8-a2f1-40f7-b370-649d07e1edd1.jpg",
+    "id": "82",
+    "title": "82화",
+    "rating": "9.98",
+    "date": "24.04.17"
+  },
+  {
+    "thumb": "https://image-comic.pstatic.net/webtoon/800770/81/thumbnail_202x120_0abab9af-7ac0-4edc-ab5f-a751abc41f2c.jpg",
+    "id": "81",
+    "title": "81화",
+    "rating": "9.97",
+    "date": "24.04.10"
+  },
+  {
+    "thumb": "https://image-comic.pstatic.net/webtoon/800770/80/thumbnail_202x120_3ae85334-10b7-4903-a27f-41f3f635d0cc.jpg",
+    "id": "80",
+    "title": "80화",
+    "rating": "9.96",
+    "date": "24.04.03"
+  },
+  {
+    "thumb": "https://image-comic.pstatic.net/webtoon/800770/79/thumbnail_202x120_b43858f5-c6e5-42e5-85df-bb75f6126d0b.jpg",
+    "id": "79",
+    "title": "79화",
+    "rating": "9.97",
+    "date": "24.03.27"
+  },
+  {
+    "thumb": "https://image-comic.pstatic.net/webtoon/800770/78/thumbnail_202x120_7f9c52e7-d638-44a3-a0fc-30ef467f038e.jpg",
+    "id": "78",
+    "title": "78화",
+    "rating": "9.97",
+    "date": "24.03.20"
+  },
+  {
+    "thumb": "https://image-comic.pstatic.net/webtoon/800770/77/thumbnail_202x120_72ca1142-9e90-4197-b780-0eb0820d7bc4.jpg",
+    "id": "77",
+    "title": "77화",
+    "rating": "9.97",
+    "date": "24.03.13"
+  },
+  {
+    "thumb": "https://image-comic.pstatic.net/webtoon/800770/76/thumbnail_202x120_da4b38f6-3ca3-4bf1-9a87-1f61f96139e4.jpg",
+    "id": "76",
+    "title": "76화",
+    "rating": "9.96",
+    "date": "24.03.06"
+  },
+  {
+    "thumb": "https://image-comic.pstatic.net/webtoon/800770/75/thumbnail_202x120_a5c923c5-882d-436f-ba88-93ffb290743c.jpg",
+    "id": "75",
+    "title": "75화",
+    "rating": "9.97",
+    "date": "24.02.28"
+  },
+  {
+    "thumb": "https://image-comic.pstatic.net/webtoon/800770/74/thumbnail_202x120_802402a7-83a5-4b8d-8951-906bd9dc7044.jpg",
+    "id": "74",
+    "title": "74화",
+    "rating": "9.97",
+    "date": "24.02.21"
+  },
+  {
+    "thumb": "https://image-comic.pstatic.net/webtoon/800770/73/thumbnail_202x120_ae471f2c-12ea-4100-8639-5f3a0f76a3a5.jpg",
+    "id": "73",
+    "title": "73화",
+    "rating": "9.97",
+    "date": "24.02.14"
+  },
+  {
+    "thumb": "https://image-comic.pstatic.net/webtoon/800770/72/thumbnail_202x120_5dbf589e-38b8-4ac3-89ae-fb527d3b5bce.jpg",
+    "id": "72",
+    "title": "72화",
+    "rating": "9.97",
+    "date": "24.02.07"
+  },
+  {
+    "thumb": "https://image-comic.pstatic.net/webtoon/800770/71/thumbnail_202x120_bbf7c0b4-2ed3-4f22-a6cd-6e4531b3fa87.jpg",
+    "id": "71",
+    "title": "71화",
+    "rating": "9.97",
+    "date": "24.01.31"
+  },
+  {
+    "thumb": "https://image-comic.pstatic.net/webtoon/800770/70/thumbnail_202x120_2805cd57-fa0c-4dd9-93de-41e8c06c76c6.jpg",
+    "id": "70",
+    "title": "70화",
+    "rating": "9.97",
+    "date": "24.01.24"
+  },
+  {
+    "thumb": "https://image-comic.pstatic.net/webtoon/800770/69/thumbnail_202x120_8d9fde21-64aa-4d2f-bdfb-710f09ddd28c.jpg",
+    "id": "69",
+    "title": "69화",
+    "rating": "9.97",
+    "date": "24.01.17"
+  },
+  {
+    "thumb": "https://image-comic.pstatic.net/webtoon/800770/68/thumbnail_202x120_9aadd19f-e5c6-4432-bff5-9ce9d63472cc.jpg",
+    "id": "68",
+    "title": "68화",
+    "rating": "9.97",
+    "date": "24.01.10"
+  },
+  {
+    "thumb": "https://image-comic.pstatic.net/webtoon/800770/67/thumbnail_202x120_ca139803-3ff1-4c39-949e-868e41b3d0b0.jpg",
+    "id": "67",
+    "title": "67화",
+    "rating": "9.94",
+    "date": "24.01.03"
+  },
+  {
+    "thumb": "https://image-comic.pstatic.net/webtoon/800770/66/thumbnail_202x120_5026996d-5aaf-4259-bfdc-eb52bb699a11.jpg",
+    "id": "66",
+    "title": "66화",
+    "rating": "9.97",
+    "date": "23.12.27"
+  },
+  {
+    "thumb": "https://image-comic.pstatic.net/webtoon/800770/65/thumbnail_202x120_4c4e8c91-1fc4-402d-862d-da7999efac55.jpg",
+    "id": "65",
+    "title": "65화",
+    "rating": "9.97",
+    "date": "23.12.20"
+  },
+  {
+    "thumb": "https://image-comic.pstatic.net/webtoon/800770/64/thumbnail_202x120_3a6028d1-c832-4d98-951b-4ea6249135bb.jpg",
+    "id": "64",
+    "title": "64화",
+    "rating": "9.97",
+    "date": "23.12.13"
+  },
+  {
+    "thumb": "https://image-comic.pstatic.net/webtoon/800770/63/thumbnail_202x120_2ced11af-7199-463f-914d-29cfd635b08c.jpg",
+    "id": "63",
+    "title": "63화",
+    "rating": "9.97",
+    "date": "23.12.06"
+  },
+  {
+    "thumb": "https://image-comic.pstatic.net/webtoon/800770/62/thumbnail_202x120_88e36e66-9530-4adb-a640-36d30729a052.jpg",
+    "id": "62",
+    "title": "62화",
+    "rating": "9.98",
+    "date": "23.11.29"
+  }
+]
