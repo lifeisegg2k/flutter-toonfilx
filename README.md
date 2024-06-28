@@ -14,7 +14,7 @@ Tools • Dart 3.4.3 • DevTools 2.34.3
 
 ## Flow
 
-![Flow](./docs/flowchart.png)
+![Flow](./docs/flowchart_2.png)
 
 ## 内容
 
