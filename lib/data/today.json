@@ -1,0 +1,250 @@
+// 20240620162531
+// https://webtoon-crawler.nomadcoders.workers.dev/today
+
+[
+  {
+    "id": "812354",
+    "title": "신혼일기",
+    "thumb": "https://image-comic.pstatic.net/webtoon/812354/thumbnail/thumbnail_IMAG21_db07011f-6b03-4a20-83cc-6bf5689e975f.jpg"
+  },
+  {
+    "id": "800770",
+    "title": "재벌집 막내아들",
+    "thumb": "https://image-comic.pstatic.net/webtoon/800770/thumbnail/thumbnail_IMAG21_d2e1e7ee-fc83-4030-a1e7-200378bc088f.jpg"
+  },
+  {
+    "id": "823021",
+    "title": "피부과 만렙남",
+    "thumb": "https://image-comic.pstatic.net/webtoon/823021/thumbnail/thumbnail_IMAG21_dbdac991-db82-493f-b2cf-fbb3045dbc27.jpg"
+  },
+  {
+    "id": "776255",
+    "title": "천마육성",
+    "thumb": "https://image-comic.pstatic.net/webtoon/776255/thumbnail/thumbnail_IMAG21_02fb1475-2e82-4bcd-ae93-c22d6b7158ae.jpg"
+  },
+  {
+    "id": "801505",
+    "title": "뮤즈 온 유명",
+    "thumb": "https://image-comic.pstatic.net/webtoon/801505/thumbnail/thumbnail_IMAG21_1ba4c85a-5a9f-41aa-af97-6c514f220b44.jpg"
+  },
+  {
+    "id": "814512",
+    "title": "사내연애 사절!",
+    "thumb": "https://image-comic.pstatic.net/webtoon/814512/thumbnail/thumbnail_IMAG21_822d18b7-4c27-4cb0-9966-2b156aceaac0.jpg"
+  },
+  {
+    "id": "794155",
+    "title": "버려진 나의 최애를 위하여",
+    "thumb": "https://image-comic.pstatic.net/webtoon/794155/thumbnail/thumbnail_IMAG21_788f081a-865c-44bc-aa32-bfb382cb2494.jpg"
+  },
+  {
+    "id": "817246",
+    "title": "할배무사와 지존 손녀",
+    "thumb": "https://image-comic.pstatic.net/webtoon/817246/thumbnail/thumbnail_IMAG21_46f61b55-c361-40e0-9506-77ab75e5a65c.jpg"
+  },
+  {
+    "id": "812629",
+    "title": "내향남녀",
+    "thumb": "https://image-comic.pstatic.net/webtoon/812629/thumbnail/thumbnail_IMAG21_692752ea-20d9-4972-972b-66338ab3a8dd.jpg"
+  },
+  {
+    "id": "797937",
+    "title": "순수한 동거생활",
+    "thumb": "https://image-comic.pstatic.net/webtoon/797937/thumbnail/thumbnail_IMAG21_437f40c3-9af5-4c79-88fd-b0c16217e266.jpg"
+  },
+  {
+    "id": "796827",
+    "title": "회귀한 천재 헌터의 슬기로운 청소생활",
+    "thumb": "https://image-comic.pstatic.net/webtoon/796827/thumbnail/thumbnail_IMAG21_f08bc78b-4135-4851-9b73-7def9b9656b6.jpg"
+  },
+  {
+    "id": "797731",
+    "title": "순정빌런",
+    "thumb": "https://image-comic.pstatic.net/webtoon/797731/thumbnail/thumbnail_IMAG21_ec646e33-25d7-4497-8afd-2f7f78590dc7.jpg"
+  },
+  {
+    "id": "780170",
+    "title": "나 혼자 네크로맨서",
+    "thumb": "https://image-comic.pstatic.net/webtoon/780170/thumbnail/thumbnail_IMAG21_25735c55-4f4a-409e-b280-3aa11060c173.jpg"
+  },
+  {
+    "id": "822075",
+    "title": "첫날밤을 보낸 그 악녀를 찾습니다",
+    "thumb": "https://image-comic.pstatic.net/webtoon/822075/thumbnail/thumbnail_IMAG21_babb09d6-0343-4fb7-90c3-4e80318874cf.jpg"
+  },
+  {
+    "id": "823285",
+    "title": "기자매",
+    "thumb": "https://image-comic.pstatic.net/webtoon/823285/thumbnail/thumbnail_IMAG21_30b3e19f-25e0-4f5c-9c5f-bc4721b1c092.jpg"
+  },
+  {
+    "id": "824237",
+    "title": "에밀리의 저택",
+    "thumb": "https://image-comic.pstatic.net/webtoon/824237/thumbnail/thumbnail_IMAG21_b75f7b60-87b9-4bc4-bc5f-63fa1d89a80e.jpg"
+  },
+  {
+    "id": "812962",
+    "title": "일립예고 학생들",
+    "thumb": "https://image-comic.pstatic.net/webtoon/812962/thumbnail/thumbnail_IMAG21_77916a2b-ee79-4a98-93cc-c15095617eb0.jpg"
+  },
+  {
+    "id": "785727",
+    "title": "국세청 망나니",
+    "thumb": "https://image-comic.pstatic.net/webtoon/785727/thumbnail/thumbnail_IMAG21_577eb300-8278-423b-b1f8-cca37f54adb8.jpg"
+  },
+  {
+    "id": "809625",
+    "title": "시한부 천재 암흑기사",
+    "thumb": "https://image-comic.pstatic.net/webtoon/809625/thumbnail/thumbnail_IMAG21_445798d0-7a81-45e7-a526-fce351b67671.jpg"
+  },
+  {
+    "id": "823971",
+    "title": "이세계 캠핑으로 힐링 라이프",
+    "thumb": "https://image-comic.pstatic.net/webtoon/823971/thumbnail/thumbnail_IMAG21_ec848365-0106-4bf2-8c5d-3c0b1723f8b2.jpg"
+  },
+  {
+    "id": "825415",
+    "title": "소심한 호랭이 코코",
+    "thumb": "https://image-comic.pstatic.net/webtoon/825415/thumbnail/thumbnail_IMAG21_641992da-1280-4b00-b8f7-642e4feb7fa9.jpg"
+  },
+  {
+    "id": "822874",
+    "title": "삼이는 재생한다",
+    "thumb": "https://image-comic.pstatic.net/webtoon/822874/thumbnail/thumbnail_IMAG21_57316c8e-810f-499c-984c-526f524d861e.jpg"
+  },
+  {
+    "id": "826322",
+    "title": "백투더찬비",
+    "thumb": "https://image-comic.pstatic.net/webtoon/826322/thumbnail/thumbnail_IMAG21_3eb4ba39-ef18-4178-b5a1-ca4243e455e6.jpg"
+  },
+  {
+    "id": "812164",
+    "title": "쌍둥이 영애가 남장을 하는 이유",
+    "thumb": "https://image-comic.pstatic.net/webtoon/812164/thumbnail/thumbnail_IMAG21_ec2ab54e-68be-4ff5-8e7a-1e3dfcb213cb.jpg"
+  },
+  {
+    "id": "794651",
+    "title": "두 번째 딸로 태어났습니다",
+    "thumb": "https://image-comic.pstatic.net/webtoon/794651/thumbnail/thumbnail_IMAG21_78738c64-26ce-4992-b586-b4e4d3298fd6.jpg"
+  },
+  {
+    "id": "801698",
+    "title": "게임 최강 트롤러",
+    "thumb": "https://image-comic.pstatic.net/webtoon/801698/thumbnail/thumbnail_IMAG21_52e81ef5-fb49-4f99-801c-0e13c5691c67."
+  },
+  {
+    "id": "798331",
+    "title": "규격 외 혈통 천재",
+    "thumb": "https://image-comic.pstatic.net/webtoon/798331/thumbnail/thumbnail_IMAG21_43d65de1-2803-4674-9dee-77b7b025d80a.jpg"
+  },
+  {
+    "id": "131385",
+    "title": "쿠베라",
+    "thumb": "https://image-comic.pstatic.net/webtoon/131385/thumbnail/thumbnail_IMAG21_1d44dd99-4fef-48b5-81f0-083e83b6c048.jpg"
+  },
+  {
+    "id": "805368",
+    "title": "이러면 안 돼요, 전하!",
+    "thumb": "https://image-comic.pstatic.net/webtoon/805368/thumbnail/thumbnail_IMAG21_799f8c89-44ca-4e6b-9c1d-ccb38fc4f0a1.jpg"
+  },
+  {
+    "id": "802039",
+    "title": "루루라라 우리네 인생",
+    "thumb": "https://image-comic.pstatic.net/webtoon/802039/thumbnail/thumbnail_IMAG21_a7a82a34-586c-4acf-b6f2-ab052be786f1.jpg"
+  },
+  {
+    "id": "802378",
+    "title": "엔딩, 바꿔보려합니다",
+    "thumb": "https://image-comic.pstatic.net/webtoon/802378/thumbnail/thumbnail_IMAG21_a47d175e-5271-4228-807b-28eb40224e7d.jpg"
+  },
+  {
+    "id": "824700",
+    "title": "골레이로",
+    "thumb": "https://image-comic.pstatic.net/webtoon/824700/thumbnail/thumbnail_IMAG21_d6b6388d-d619-4a66-b1ec-274b961899f8.jpg"
+  },
+  {
+    "id": "813625",
+    "title": "내가 사랑한 물고기",
+    "thumb": "https://image-comic.pstatic.net/webtoon/813625/thumbnail/thumbnail_IMAG21_da7dcddf-5dfd-4509-8033-f8d92d79763d.jpg"
+  },
+  {
+    "id": "741825",
+    "title": "꽃만 키우는데 너무 강함",
+    "thumb": "https://image-comic.pstatic.net/webtoon/741825/thumbnail/thumbnail_IMAG21_0a05e5c3-8278-43ea-bbfb-99140c7f072c.jpg"
+  },
+  {
+    "id": "808910",
+    "title": "그 악룡은 무엇을 위해 사는가",
+    "thumb": "https://image-comic.pstatic.net/webtoon/808910/thumbnail/thumbnail_IMAG21_7ff45d3f-5da2-49c4-b91a-ad1396ed6793.jpg"
+  },
+  {
+    "id": "729964",
+    "title": "만물의 영장",
+    "thumb": "https://image-comic.pstatic.net/webtoon/729964/thumbnail/thumbnail_IMAG21_3625061d-dadd-4e0c-96cd-9fcf1fe584c9.jpg"
+  },
+  {
+    "id": "824264",
+    "title": "천마님 안마하신다",
+    "thumb": "https://image-comic.pstatic.net/webtoon/824264/thumbnail/thumbnail_IMAG21_5b618ba8-2c33-4dfa-af28-58d3dc85cb04.jpg"
+  },
+  {
+    "id": "817369",
+    "title": "히든클래스 중력자로 최강을 노린다",
+    "thumb": "https://image-comic.pstatic.net/webtoon/817369/thumbnail/thumbnail_IMAG21_be76f4ba-d928-4c3b-a91f-f4ab8e82af3e.jpg"
+  },
+  {
+    "id": "823779",
+    "title": "누가 어른 되면 다 된댔어?",
+    "thumb": "https://image-comic.pstatic.net/webtoon/823779/thumbnail/thumbnail_IMAG21_f51188b5-d3a2-4f64-bbab-3b368e031f51.jpg"
+  },
+  {
+    "id": "820102",
+    "title": "영광의 해일로",
+    "thumb": "https://image-comic.pstatic.net/webtoon/820102/thumbnail/thumbnail_IMAG21_daf6a2ca-a366-481b-96f9-556d8a7a9e18.jpg"
+  },
+  {
+    "id": "817631",
+    "title": "학생만 하면 안 될까요?",
+    "thumb": "https://image-comic.pstatic.net/webtoon/817631/thumbnail/thumbnail_IMAG21_d9f54b38-3062-4cfb-9215-d7b79ef87e77.jpg"
+  },
+  {
+    "id": "794644",
+    "title": "사랑하는 여배우들",
+    "thumb": "https://image-comic.pstatic.net/webtoon/794644/thumbnail/thumbnail_IMAG21_6d7a7af6-ed5d-474f-bae0-f5fc70cef0e6.jpg"
+  },
+  {
+    "id": "812223",
+    "title": "3X3!",
+    "thumb": "https://image-comic.pstatic.net/webtoon/812223/thumbnail/thumbnail_IMAG21_8cd5cd96-8a33-40f2-bcad-c22179ffc5b8.jpg"
+  },
+  {
+    "id": "802849",
+    "title": "사기 친 공작님을 유혹해버렸다",
+    "thumb": "https://image-comic.pstatic.net/webtoon/802849/thumbnail/thumbnail_IMAG21_3021fe31-4f25-4253-aa77-75a584f09942.jpg"
+  },
+  {
+    "id": "796492",
+    "title": "유월의 소한",
+    "thumb": "https://image-comic.pstatic.net/webtoon/796492/thumbnail/thumbnail_IMAG21_4122820291731022946.jpg"
+  },
+  {
+    "id": "754876",
+    "title": "카루나",
+    "thumb": "https://image-comic.pstatic.net/webtoon/754876/thumbnail/thumbnail_IMAG21_3904682673849053541.jpg"
+  },
+  {
+    "id": "827328",
+    "title": "추억이 찾아오는 가게",
+    "thumb": "https://image-comic.pstatic.net/webtoon/827328/thumbnail/thumbnail_IMAG21_9fc03e26-d854-4fb2-b6b4-1865d7ce04ab.jpg"
+  },
+  {
+    "id": "817611",
+    "title": "일진만화에서 살아남기",
+    "thumb": "https://image-comic.pstatic.net/webtoon/817611/thumbnail/thumbnail_IMAG21_b00a586f-5f01-4320-bad6-7c27c844761e.jpg"
+  },
+  {
+    "id": "813802",
+    "title": "괴물의 바다",
+    "thumb": "https://image-comic.pstatic.net/webtoon/813802/thumbnail/thumbnail_IMAG21_a579f9c8-251d-4e09-a42a-9253540d0437.jpg"
+  }
+]
