@@ -125,7 +125,7 @@ class _WebToonScreenOldState extends State<WebToonScreenOld> {
   // 2. waitForWebtoons
   // 3. ApiService.getTodaysToons
   // 4. build
-  // 5. 데이터 도착
+  // 5. response data
   // 6. isLoading = false
   // 7. setState
   // 8. build
