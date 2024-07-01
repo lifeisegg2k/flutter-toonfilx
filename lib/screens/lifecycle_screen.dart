@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
 
-class LifecycelScreen extends StatefulWidget {
-  const LifecycelScreen({super.key});
+class LifecycleScreen extends StatefulWidget {
+  const LifecycleScreen({super.key});
 
   @override
-  State<LifecycelScreen> createState() => _LifecycelScreenState();
+  State<LifecycleScreen> createState() => _LifecylelScreenState();
 }
 
-class _LifecycelScreenState extends State<LifecycelScreen> {
+class _LifecylelScreenState extends State<LifecycleScreen> {
   List<int> numbers = [];
   bool showTitle = true;
+  bool showPopup = true;
 
   void toggleTitle() {
     setState(() {

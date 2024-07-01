@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:toonflix/screens/lifecycel_screen.dart';
+import 'package:toonflix/screens/lifecycle_screen.dart';
 import 'package:toonflix/screens/pomodors_screen.dart';
 import 'package:toonflix/screens/wallets_screen.dart';
 import 'package:toonflix/screens/webtoon_screen.dart';
@@ -44,7 +44,16 @@ class TopScreen extends StatelessWidget {
               listTitle: "Lifecycle",
               listImagePath: 'images/AppLifecycle.png',
               listDesc: 'Stateless and Stateful',
-              listNextScreen: LifecycelScreen(),
+              listNextScreen: LifecycleScreen(),
+            ),
+            const SizedBox(
+              width: 25,
+            ),
+            const TopWidget(
+              listTitle: "Popup",
+              listImagePath: 'images/AppLifecycle.png',
+              listDesc: 'Modal Popup',
+              listNextScreen: LifecycleScreen(),
             ),
             const SizedBox(
               width: 25,
