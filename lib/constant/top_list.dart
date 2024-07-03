@@ -3,14 +3,14 @@ class TopList {
     "Design",
     "Lifecycle",
     "Popup",
-    "Pomodors",
+    "Pomodoros",
     "Webtoon",
   ];
   static List<String> listImagePath = [
     'images/AppWallets.png',
     'images/AppLifecycle.png',
     'images/AppPopup.png',
-    'images/AppPomodors.png',
+    'images/AppPomodoros.png',
     'images/AppWebtoon.png',
   ];
   static List<String> listDesc = [

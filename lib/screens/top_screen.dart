@@ -3,7 +3,7 @@ import 'package:toonflix/constant/app_colors.dart';
 import 'package:toonflix/constant/app_dimens.dart';
 import 'package:toonflix/constant/app_string.dart';
 import 'package:toonflix/screens/lifecycle_screen.dart';
-import 'package:toonflix/screens/pomodors_screen.dart';
+import 'package:toonflix/screens/pomodoros_screen.dart';
 import 'package:toonflix/screens/popup_screen.dart';
 import 'package:toonflix/screens/wallets_screen.dart';
 import 'package:toonflix/screens/webtoon_screen.dart';
@@ -52,7 +52,7 @@ class TopScreen extends StatelessWidget {
             sizeBoxWidth(),
             const TopWidget(
               index: 3,
-              listNextScreen: PomodorsScreen(),
+              listNextScreen: PomodorosScreen(),
             ),
             sizeBoxWidth(),
             TopWidget(

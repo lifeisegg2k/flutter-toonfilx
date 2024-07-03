@@ -5,7 +5,7 @@ class AppString {
   static const String title = 'Lecture - Flutter';
   static const String titleWallet = 'Design - Wallet';
   static const String titleLifeCycle = 'LifeCycle';
-  static const String titlePomodors = 'Pomodors';
+  static const String titlePomodoros = 'Pomodoros';
   static const String titlePopup = 'Popup';
   static const String titleWebtoon = "Today's WebToon";
 
