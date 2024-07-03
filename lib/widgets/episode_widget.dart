@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:toonflix/constant/app_colors.dart';
+import 'package:toonflix/constant/app_dimens.dart';
+import 'package:toonflix/constant/app_urls.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:toonflix/models/webtoon_episode_model.dart';
 
@@ -13,10 +16,10 @@ class Episode extends StatelessWidget {
   final String webtoonId;
 
   onButtonTab() async {
-    final url = Uri.parse(
-        "https://comic.naver.com/webtoon/detail?titleId=$webtoonId&no=${episode.id}");
+    final url =
+        Uri.parse("${AppUrls.webtoonUrl}?titleId=$webtoonId&no=${episode.id}");
     await launchUrl(url);
-    // await launchUrlString("https://google.com");
+    // await launchUrlString("${AppUrls.googleUrl}");
   }
 
   @override
@@ -28,7 +31,7 @@ class Episode extends StatelessWidget {
           bottom: 10,
         ),
         decoration: BoxDecoration(
-          color: Colors.green[400],
+          color: AppColors.green400,
           borderRadius: BorderRadius.circular(15),
         ),
         child: Padding(
@@ -43,7 +46,7 @@ class Episode extends StatelessWidget {
                 episode.thumb,
                 height: 30,
                 headers: const {
-                  'Referer': 'https://comic.naver.com',
+                  'Referer': AppUrls.referUrl,
                 },
               ),
               Expanded(
@@ -52,15 +55,15 @@ class Episode extends StatelessWidget {
                   child: Text(
                     episode.title,
                     style: const TextStyle(
-                      color: Colors.white,
-                      fontSize: 16,
+                      color: AppColors.white,
+                      fontSize: AppDimens.fontSize16,
                     ),
                   ),
                 ),
               ),
               const Icon(
                 Icons.chevron_right_rounded,
-                color: Colors.white,
+                color: AppColors.white,
               ),
             ],
           ),

@@ -1,15 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:toonflix/constant/app_colors.dart';
+import 'package:toonflix/constant/app_dimens.dart';
+import 'package:toonflix/constant/app_string.dart';
 
-class LifecycelScreen extends StatefulWidget {
-  const LifecycelScreen({super.key});
+class LifecycleScreen extends StatefulWidget {
+  const LifecycleScreen({super.key});
 
   @override
-  State<LifecycelScreen> createState() => _LifecycelScreenState();
+  State<LifecycleScreen> createState() => _LifecycleScreenState();
 }
 
-class _LifecycelScreenState extends State<LifecycelScreen> {
+class _LifecycleScreenState extends State<LifecycleScreen> {
   List<int> numbers = [];
   bool showTitle = true;
+  bool showPopup = true;
 
   void toggleTitle() {
     setState(() {
@@ -27,15 +31,15 @@ class _LifecycelScreenState extends State<LifecycelScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFFF4EDDB),
+      backgroundColor: AppColors.bgColorWhite,
       appBar: AppBar(
         elevation: 2,
-        backgroundColor: Colors.lightBlue,
-        foregroundColor: Colors.white,
+        backgroundColor: AppColors.lightBlue,
+        foregroundColor: AppColors.white,
         title: const Text(
-          "LifeCycle",
+          AppString.titleLifeCycle,
           style: TextStyle(
-            fontSize: 24,
+            fontSize: AppDimens.fontSize24,
             fontWeight: FontWeight.bold,
           ),
         ),
@@ -44,19 +48,19 @@ class _LifecycelScreenState extends State<LifecycelScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            showTitle ? const MyLargeTitle() : const Text('Nothing'),
+            showTitle ? const MyLargeTitle() : const Text(AppString.nothing),
             IconButton(
-              iconSize: 40,
+              iconSize: AppDimens.dSize040,
               onPressed: toggleTitle,
               icon: const Icon(Icons.remove_red_eye),
             ),
             const Text(
-              'Click Count',
-              style: TextStyle(fontSize: 30),
+              AppString.clickCount,
+              style: TextStyle(fontSize: AppDimens.fontSize30),
             ),
             for (var n in numbers) Text('$n'),
             IconButton(
-              iconSize: 40,
+              iconSize: AppDimens.dSize040,
               onPressed: onClicked,
               icon: const Icon(Icons.add_box_rounded),
             ),
@@ -94,10 +98,10 @@ class _MyLargeTitleState extends State<MyLargeTitle> {
   Widget build(BuildContext context) {
     // print('build!');
     return Text(
-      'My Large Title',
+      AppString.titleLarge,
       style: TextStyle(
-        fontSize: 30,
-        color: Theme.of(context).textTheme.titleLarge?.color ?? Colors.blue,
+        fontSize: AppDimens.fontSize30,
+        color: Theme.of(context).textTheme.titleLarge?.color ?? AppColors.blue,
       ),
     );
   }

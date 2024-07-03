@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:toonflix/constant/app_colors.dart';
+import 'package:toonflix/constant/app_dimens.dart';
+import 'package:toonflix/constant/app_string.dart';
 import 'package:toonflix/services/api_service.dart';
 import 'package:toonflix/models/webtoon_model.dart';
 import 'package:toonflix/widgets/webtoon_widget.dart';
@@ -14,15 +17,15 @@ class WebToonScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     // print(webtoons);
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: AppColors.white,
       appBar: AppBar(
         elevation: 3,
-        backgroundColor: Colors.white38,
-        foregroundColor: Colors.green,
+        backgroundColor: AppColors.white38,
+        foregroundColor: AppColors.green,
         title: const Text(
           "Today's WebToon",
           style: TextStyle(
-            fontSize: 24,
+            fontSize: AppDimens.fontSize24,
             fontWeight: FontWeight.bold,
           ),
         ),
@@ -40,9 +43,7 @@ class WebToonScreen extends StatelessWidget {
             // ### ListView.separated #######
             return Column(
               children: [
-                const SizedBox(
-                  height: 50,
-                ),
+                const SizedBox(height: AppDimens.dSize050),
                 Expanded(
                   child: makeList(snapshot),
                 ),
@@ -73,9 +74,8 @@ class WebToonScreen extends StatelessWidget {
           id: webtoon.id,
         );
       },
-      separatorBuilder: (context, index) => const SizedBox(
-        width: 40,
-      ),
+      separatorBuilder: (context, index) =>
+          const SizedBox(width: AppDimens.dSize040),
     );
   }
 }
@@ -134,15 +134,15 @@ class _WebToonScreenOldState extends State<WebToonScreenOld> {
     // print(webtoons);
     // print(isLoading);
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: AppColors.white,
       appBar: AppBar(
         elevation: 3,
-        backgroundColor: Colors.white38,
-        foregroundColor: Colors.green,
+        backgroundColor: AppColors.white38,
+        foregroundColor: AppColors.green,
         title: const Text(
-          "Today's WebToon",
+          AppString.titleWebtoon,
           style: TextStyle(
-            fontSize: 24,
+            fontSize: AppDimens.fontSize24,
             fontWeight: FontWeight.bold,
           ),
         ),

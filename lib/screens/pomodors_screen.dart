@@ -1,5 +1,8 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
+import 'package:toonflix/constant/app_colors.dart';
+import 'package:toonflix/constant/app_dimens.dart';
+import 'package:toonflix/constant/app_string.dart';
 
 class PomodorsScreen extends StatefulWidget {
   const PomodorsScreen({super.key});
@@ -63,12 +66,12 @@ class _PomodorsScreenState extends State<PomodorsScreen> {
       backgroundColor: Theme.of(context).colorScheme.primary,
       appBar: AppBar(
         elevation: 2,
-        backgroundColor: Colors.lightBlue,
-        foregroundColor: Colors.white,
+        backgroundColor: AppColors.lightBlue,
+        foregroundColor: AppColors.white,
         title: const Text(
           "Pomodors",
           style: TextStyle(
-            fontSize: 24,
+            fontSize: AppDimens.fontSize24,
             fontWeight: FontWeight.bold,
           ),
         ),
@@ -83,7 +86,7 @@ class _PomodorsScreenState extends State<PomodorsScreen> {
                 timeFormat(totalSeconds),
                 style: TextStyle(
                   color: Theme.of(context).cardColor,
-                  fontSize: 89,
+                  fontSize: AppDimens.fontSize89,
                   fontWeight: FontWeight.w600,
                 ),
               ),
@@ -97,7 +100,7 @@ class _PomodorsScreenState extends State<PomodorsScreen> {
                 Center(
                   child: IconButton(
                     onPressed: isRunning ? onPausePressed : onStartPressed,
-                    iconSize: 120,
+                    iconSize: AppDimens.dSize120,
                     color: Theme.of(context).cardColor,
                     icon: Icon(
                       isRunning
@@ -109,7 +112,7 @@ class _PomodorsScreenState extends State<PomodorsScreen> {
                 Center(
                   child: IconButton(
                     onPressed: isRunning ? () {} : onReset,
-                    iconSize: 50,
+                    iconSize: AppDimens.dSize050,
                     color: isRunning
                         ? Theme.of(context).cardColor.withOpacity(0.4)
                         : Theme.of(context).cardColor,
@@ -135,9 +138,9 @@ class _PomodorsScreenState extends State<PomodorsScreen> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Text(
-                          'Pomodors',
+                          AppString.titlePomodors,
                           style: TextStyle(
-                            fontSize: 20,
+                            fontSize: AppDimens.fontSize20,
                             fontWeight: FontWeight.w600,
                             color:
                                 Theme.of(context).textTheme.displayLarge?.color,
@@ -146,7 +149,7 @@ class _PomodorsScreenState extends State<PomodorsScreen> {
                         Text(
                           '$totalPomodoros',
                           style: TextStyle(
-                            fontSize: 60,
+                            fontSize: AppDimens.fontSize60,
                             fontWeight: FontWeight.w600,
                             color:
                                 Theme.of(context).textTheme.displayLarge?.color,
