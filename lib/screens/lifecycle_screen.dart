@@ -56,7 +56,7 @@ class _LifecycleScreenState extends State<LifecycleScreen> {
             ),
             const Text(
               AppString.clickCount,
-              style: TextStyle(fontSize: 30),
+              style: TextStyle(fontSize: AppDimens.fontSize30),
             ),
             for (var n in numbers) Text('$n'),
             IconButton(
