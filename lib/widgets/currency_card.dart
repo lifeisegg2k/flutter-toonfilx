@@ -43,7 +43,7 @@ class CurrencyCard extends StatelessWidget {
                     fontWeight: FontWeight.w600,
                   ),
                 ),
-                sizeBox(heightSize: AppDimens.dSize020),
+                const SizedBox(height: AppDimens.dSize020),
                 Row(
                   children: [
                     Text(
@@ -53,7 +53,7 @@ class CurrencyCard extends StatelessWidget {
                         fontSize: AppDimens.fontSize20,
                       ),
                     ),
-                    sizeBox(widthSize: AppDimens.dSize005),
+                    const SizedBox(width: AppDimens.dSize005),
                     Text(
                       currencyUnit,
                       style: TextStyle(
@@ -81,13 +81,6 @@ class CurrencyCard extends StatelessWidget {
           ],
         ),
       ),
-    );
-  }
-
-  SizedBox sizeBox({double widthSize = 0.0, double heightSize = 0.0}) {
-    return SizedBox(
-      height: heightSize,
-      width: widthSize,
     );
   }
 }

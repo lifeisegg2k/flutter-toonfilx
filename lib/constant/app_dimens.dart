@@ -11,6 +11,7 @@ class AppDimens {
   static const int iSize005 = 5;
   static const int iSize010 = 10;
 
+  static const double dSize000 = 0.0;
   static const double dSize003 = 3.0;
   static const double dSize005 = 5.0;
   static const double dSize010 = 10.0;

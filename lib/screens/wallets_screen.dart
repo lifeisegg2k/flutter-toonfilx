@@ -32,7 +32,7 @@ class WalletsScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              sizeBoxHeight(AppDimens.dSize080),
+              const SizedBox(height: AppDimens.dSize080),
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
@@ -58,7 +58,7 @@ class WalletsScreen extends StatelessWidget {
                   ),
                 ],
               ),
-              sizeBoxHeight(AppDimens.dSize050),
+              const SizedBox(height: AppDimens.dSize050),
               Text(
                 AppString.totalBalance,
                 style: TextStyle(
@@ -66,7 +66,7 @@ class WalletsScreen extends StatelessWidget {
                   color: AppColors.whiteOpacity08,
                 ),
               ),
-              sizeBoxHeight(AppDimens.dSize005),
+              const SizedBox(height: AppDimens.dSize005),
               const Text(
                 AppString.amount,
                 style: TextStyle(
@@ -75,7 +75,7 @@ class WalletsScreen extends StatelessWidget {
                   color: AppColors.white,
                 ),
               ),
-              sizeBoxHeight(AppDimens.dSize030),
+              const SizedBox(height: AppDimens.dSize030),
               const Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -91,7 +91,7 @@ class WalletsScreen extends StatelessWidget {
                   ),
                 ],
               ),
-              sizeBoxHeight(AppDimens.dSize100),
+              const SizedBox(height: AppDimens.dSize100),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 crossAxisAlignment: CrossAxisAlignment.end,
@@ -109,7 +109,7 @@ class WalletsScreen extends StatelessWidget {
                       )),
                 ],
               ),
-              sizeBoxHeight(AppDimens.dSize020),
+              const SizedBox(height: AppDimens.dSize020),
               const TransformCard(
                 currencyName: AppString.euroTitle,
                 currencyAmount: AppString.euroAmount,
@@ -135,12 +135,6 @@ class WalletsScreen extends StatelessWidget {
           ),
         ),
       ),
-    );
-  }
-
-  SizedBox sizeBoxHeight(double heightSize) {
-    return SizedBox(
-      height: heightSize,
     );
   }
 }

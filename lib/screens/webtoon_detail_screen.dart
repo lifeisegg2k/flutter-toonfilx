@@ -125,7 +125,7 @@ class _WebtoonDetailScreenState extends State<WebtoonDetailScreen> {
                   ),
                 ],
               ),
-              sizeBoxHeight(AppDimens.dSize020),
+              const SizedBox(height: AppDimens.dSize020),
               FutureBuilder(
                 future: webtoon,
                 builder: (context, snapshot) {
@@ -140,7 +140,7 @@ class _WebtoonDetailScreenState extends State<WebtoonDetailScreen> {
                             fontWeight: FontWeight.w700,
                           ),
                         ),
-                        sizeBoxHeight(AppDimens.dSize010),
+                        const SizedBox(height: AppDimens.dSize010),
                         Text(
                           snapshot.data!.about,
                           style: const TextStyle(
@@ -153,7 +153,7 @@ class _WebtoonDetailScreenState extends State<WebtoonDetailScreen> {
                   return const Text(AppString.shorthand);
                 },
               ),
-              sizeBoxHeight(AppDimens.dSize020),
+              const SizedBox(height: AppDimens.dSize020),
               FutureBuilder(
                 future: episodes,
                 builder: (context, snapshot) {
@@ -177,12 +177,6 @@ class _WebtoonDetailScreenState extends State<WebtoonDetailScreen> {
           ),
         ),
       ),
-    );
-  }
-
-  SizedBox sizeBoxHeight(double heightSize) {
-    return SizedBox(
-      height: heightSize,
     );
   }
 }

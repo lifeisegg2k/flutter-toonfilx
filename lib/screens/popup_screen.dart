@@ -56,7 +56,7 @@ class _PopupScreen2State extends State<PopupScreen2> {
               onPressed: () => {},
               icon: const Icon(Icons.circle_outlined),
             ),
-            sizeBoxWidth(AppDimens.dSize003),
+            const SizedBox(width: AppDimens.dSize003),
             IconButton(
               iconSize: AppDimens.dSize010,
               onPressed: () => {},
@@ -65,12 +65,6 @@ class _PopupScreen2State extends State<PopupScreen2> {
           ],
         ),
       ),
-    );
-  }
-
-  SizedBox sizeBoxWidth(double widthSize) {
-    return SizedBox(
-      width: widthSize,
     );
   }
 }

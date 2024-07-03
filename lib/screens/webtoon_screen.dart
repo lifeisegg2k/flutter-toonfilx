@@ -43,7 +43,7 @@ class WebToonScreen extends StatelessWidget {
             // ### ListView.separated #######
             return Column(
               children: [
-                sizeBox(heightSize: AppDimens.dSize050),
+                const SizedBox(height: AppDimens.dSize050),
                 Expanded(
                   child: makeList(snapshot),
                 ),
@@ -55,13 +55,6 @@ class WebToonScreen extends StatelessWidget {
           );
         },
       ),
-    );
-  }
-
-  SizedBox sizeBox({double widthSize = 0.0, double heightSize = 0.0}) {
-    return SizedBox(
-      height: heightSize,
-      width: widthSize,
     );
   }
 
@@ -82,7 +75,7 @@ class WebToonScreen extends StatelessWidget {
         );
       },
       separatorBuilder: (context, index) =>
-          sizeBox(widthSize: AppDimens.dSize040),
+          const SizedBox(width: AppDimens.dSize040),
     );
   }
 }

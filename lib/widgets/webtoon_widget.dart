@@ -55,7 +55,7 @@ class Webtoon extends StatelessWidget {
               ),
             ),
           ),
-          sizeBoxHeight(AppDimens.dSize010),
+          const SizedBox(height: AppDimens.dSize010),
           Text(
             title,
             style: const TextStyle(
@@ -65,12 +65,6 @@ class Webtoon extends StatelessWidget {
           ),
         ],
       ),
-    );
-  }
-
-  SizedBox sizeBoxHeight(double heightSize) {
-    return SizedBox(
-      height: heightSize,
     );
   }
 }
