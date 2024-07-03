@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:toonflix/constant/app_colors.dart';
+import 'package:toonflix/constant/app_string.dart';
 import 'package:toonflix/services/api_service.dart';
 import 'package:toonflix/models/webtoon_model.dart';
 import 'package:toonflix/widgets/webtoon_widget.dart';
@@ -14,11 +16,11 @@ class WebToonScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     // print(webtoons);
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: AppColors.white,
       appBar: AppBar(
         elevation: 3,
-        backgroundColor: Colors.white38,
-        foregroundColor: Colors.green,
+        backgroundColor: AppColors.white38,
+        foregroundColor: AppColors.green,
         title: const Text(
           "Today's WebToon",
           style: TextStyle(
@@ -134,13 +136,13 @@ class _WebToonScreenOldState extends State<WebToonScreenOld> {
     // print(webtoons);
     // print(isLoading);
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: AppColors.white,
       appBar: AppBar(
         elevation: 3,
-        backgroundColor: Colors.white38,
-        foregroundColor: Colors.green,
+        backgroundColor: AppColors.white38,
+        foregroundColor: AppColors.green,
         title: const Text(
-          "Today's WebToon",
+          AppString.titleWebtoon,
           style: TextStyle(
             fontSize: 24,
             fontWeight: FontWeight.bold,

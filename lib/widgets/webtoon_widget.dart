@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:toonflix/constant/app_colors.dart';
+import 'package:toonflix/constant/app_urls.dart';
 import 'package:toonflix/screens/webtoon_detail_screen.dart';
 
 class Webtoon extends StatelessWidget {
@@ -40,14 +42,14 @@ class Webtoon extends StatelessWidget {
                   BoxShadow(
                     blurRadius: 3,
                     offset: Offset(10, 10),
-                    color: Colors.black38,
+                    color: AppColors.black38,
                   ),
                 ],
               ),
               child: Image.network(
                 thumb,
                 headers: const {
-                  'Referer': 'https://comic.naver.com',
+                  'Referer': AppUrls.referUrl,
                 },
               ),
             ),

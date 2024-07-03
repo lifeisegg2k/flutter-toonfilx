@@ -1,22 +1,33 @@
 import 'package:flutter/material.dart';
+import 'package:toonflix/constant/top_list.dart';
 
 class TopWidget extends StatefulWidget {
-  final String listTitle, listImagePath, listDesc;
+  final int index;
   final Widget listNextScreen;
 
   const TopWidget({
     super.key,
-    required this.listTitle,
-    required this.listImagePath,
-    required this.listDesc,
+    required this.index,
     required this.listNextScreen,
   });
 
   @override
-  State<TopWidget> createState() => _TopWidgetState();
+  State<TopWidget> createState() => _TopWidget2State();
 }
 
-class _TopWidgetState extends State<TopWidget> {
+class _TopWidget2State extends State<TopWidget> {
+  String toTitle(int index) {
+    return TopList.listTitle[index];
+  }
+
+  String toImagePath(int index) {
+    return TopList.listImagePath[index];
+  }
+
+  String toDesc(int index) {
+    return TopList.listDesc[index];
+  }
+
   @override
   Widget build(BuildContext context) {
     final double displayWidth = MediaQuery.of(context).size.width;
@@ -36,7 +47,7 @@ class _TopWidgetState extends State<TopWidget> {
           Container(
             alignment: Alignment.centerRight,
             child: Text(
-              widget.listTitle,
+              toTitle(widget.index),
               style: TextStyle(
                 color: Theme.of(context).cardColor,
                 fontSize: 26,
@@ -47,14 +58,14 @@ class _TopWidgetState extends State<TopWidget> {
           Container(
             alignment: Alignment.topCenter,
             child: Image.asset(
-              widget.listImagePath,
+              toImagePath(widget.index),
               width: displayWidth * 0.60,
             ),
           ),
           Container(
             alignment: Alignment.topLeft,
             child: Text(
-              widget.listDesc,
+              toDesc(widget.index),
               style: TextStyle(
                 color: Theme.of(context).cardColor,
                 fontSize: 16,

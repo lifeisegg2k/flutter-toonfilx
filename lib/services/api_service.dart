@@ -3,10 +3,10 @@ import 'package:http/http.dart' as http;
 import 'package:toonflix/models/webtoon_model.dart';
 import 'package:toonflix/models/webtoon_detail_model.dart';
 import 'package:toonflix/models/webtoon_episode_model.dart';
+import 'package:toonflix/constant/app_urls.dart';
 
 class ApiService {
-  static const String baseUrl =
-      "https://webtoon-crawler.nomadcoders.workers.dev";
+  static const String baseUrl = AppUrls.baseUrl;
   static const String today = "today";
 
   static Future<List<WebtoonModel>> getTodaysToons() async {

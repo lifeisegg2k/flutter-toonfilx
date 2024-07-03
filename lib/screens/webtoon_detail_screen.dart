@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:toonflix/constant/app_colors.dart';
+import 'package:toonflix/constant/app_string.dart';
+import 'package:toonflix/constant/app_urls.dart';
 import 'package:toonflix/services/api_service.dart';
 import 'package:toonflix/models/webtoon_detail_model.dart';
 import 'package:toonflix/models/webtoon_episode_model.dart';
@@ -24,7 +27,7 @@ class _WebtoonDetailScreenState extends State<WebtoonDetailScreen> {
   late Future<List<WebtoonEpisodeModel>> episodes;
   // Obtain shared preferences.
   late SharedPreferences prefs;
-  final String prefsKey = 'likedToons';
+  final String prefsKey = AppString.prefsKey;
   bool isLiked = false;
 
   Future initPrefs() async {
@@ -67,11 +70,11 @@ class _WebtoonDetailScreenState extends State<WebtoonDetailScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: AppColors.white,
       appBar: AppBar(
         elevation: 3,
-        backgroundColor: Colors.white38,
-        foregroundColor: Colors.green,
+        backgroundColor: AppColors.white38,
+        foregroundColor: AppColors.green,
         actions: [
           IconButton(
             onPressed: onHeartTab,
@@ -107,14 +110,14 @@ class _WebtoonDetailScreenState extends State<WebtoonDetailScreen> {
                           BoxShadow(
                             blurRadius: 3,
                             offset: Offset(10, 10),
-                            color: Colors.black38,
+                            color: AppColors.black38,
                           ),
                         ],
                       ),
                       child: Image.network(
                         widget.thumb,
                         headers: const {
-                          'Referer': 'https://comic.naver.com',
+                          'Referer': AppUrls.referUrl,
                         },
                       ),
                     ),
@@ -134,7 +137,9 @@ class _WebtoonDetailScreenState extends State<WebtoonDetailScreen> {
                         Text(
                           '${snapshot.data!.genre} / ${snapshot.data!.age}',
                           style: const TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.w700),
+                            fontSize: 16,
+                            fontWeight: FontWeight.w700,
+                          ),
                         ),
                         const SizedBox(
                           height: 10,
@@ -148,7 +153,7 @@ class _WebtoonDetailScreenState extends State<WebtoonDetailScreen> {
                       ],
                     );
                   }
-                  return const Text('...');
+                  return const Text(AppString.shorthand);
                 },
               ),
               const SizedBox(

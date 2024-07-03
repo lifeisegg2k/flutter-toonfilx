@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:toonflix/constant/app_colors.dart';
+import 'package:toonflix/constant/app_string.dart';
 
 class LifecycleScreen extends StatefulWidget {
   const LifecycleScreen({super.key});
 
   @override
-  State<LifecycleScreen> createState() => _LifecylelScreenState();
+  State<LifecycleScreen> createState() => _LifecycleScreenState();
 }
 
-class _LifecylelScreenState extends State<LifecycleScreen> {
+class _LifecycleScreenState extends State<LifecycleScreen> {
   List<int> numbers = [];
   bool showTitle = true;
   bool showPopup = true;
@@ -28,13 +30,13 @@ class _LifecylelScreenState extends State<LifecycleScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFFF4EDDB),
+      backgroundColor: AppColors.bgColorWhite,
       appBar: AppBar(
         elevation: 2,
-        backgroundColor: Colors.lightBlue,
-        foregroundColor: Colors.white,
+        backgroundColor: AppColors.lightBlue,
+        foregroundColor: AppColors.white,
         title: const Text(
-          "LifeCycle",
+          AppString.titleLifeCycle,
           style: TextStyle(
             fontSize: 24,
             fontWeight: FontWeight.bold,
@@ -45,14 +47,14 @@ class _LifecylelScreenState extends State<LifecycleScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            showTitle ? const MyLargeTitle() : const Text('Nothing'),
+            showTitle ? const MyLargeTitle() : const Text(AppString.nothing),
             IconButton(
               iconSize: 40,
               onPressed: toggleTitle,
               icon: const Icon(Icons.remove_red_eye),
             ),
             const Text(
-              'Click Count',
+              AppString.clickCount,
               style: TextStyle(fontSize: 30),
             ),
             for (var n in numbers) Text('$n'),
@@ -95,10 +97,10 @@ class _MyLargeTitleState extends State<MyLargeTitle> {
   Widget build(BuildContext context) {
     // print('build!');
     return Text(
-      'My Large Title',
+      AppString.titleLarge,
       style: TextStyle(
         fontSize: 30,
-        color: Theme.of(context).textTheme.titleLarge?.color ?? Colors.blue,
+        color: Theme.of(context).textTheme.titleLarge?.color ?? AppColors.blue,
       ),
     );
   }

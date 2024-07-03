@@ -1,5 +1,7 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
+import 'package:toonflix/constant/app_colors.dart';
+import 'package:toonflix/constant/app_string.dart';
 
 class PomodorsScreen extends StatefulWidget {
   const PomodorsScreen({super.key});
@@ -63,8 +65,8 @@ class _PomodorsScreenState extends State<PomodorsScreen> {
       backgroundColor: Theme.of(context).colorScheme.primary,
       appBar: AppBar(
         elevation: 2,
-        backgroundColor: Colors.lightBlue,
-        foregroundColor: Colors.white,
+        backgroundColor: AppColors.lightBlue,
+        foregroundColor: AppColors.white,
         title: const Text(
           "Pomodors",
           style: TextStyle(
@@ -135,7 +137,7 @@ class _PomodorsScreenState extends State<PomodorsScreen> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Text(
-                          'Pomodors',
+                          AppString.titlePomodors,
                           style: TextStyle(
                             fontSize: 20,
                             fontWeight: FontWeight.w600,

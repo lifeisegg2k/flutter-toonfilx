@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:toonflix/constant/app_colors.dart';
+import 'package:toonflix/constant/app_string.dart';
 import 'package:toonflix/screens/lifecycle_screen.dart';
 import 'package:toonflix/screens/pomodors_screen.dart';
+import 'package:toonflix/screens/popup_screen.dart';
 import 'package:toonflix/screens/wallets_screen.dart';
 import 'package:toonflix/screens/webtoon_screen.dart';
 import 'package:toonflix/widgets/top_widget.dart';
@@ -13,13 +16,13 @@ class TopScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.indigoAccent,
+      backgroundColor: AppColors.blueIndigoAccent,
       appBar: AppBar(
         elevation: 2,
-        backgroundColor: Colors.white38,
-        foregroundColor: Colors.black54,
+        backgroundColor: AppColors.white38,
+        foregroundColor: AppColors.black54,
         title: const Text(
-          "Lecture - Flutter",
+          AppString.title,
           style: TextStyle(
             fontSize: 24,
             fontWeight: FontWeight.bold,
@@ -32,50 +35,38 @@ class TopScreen extends StatelessWidget {
           scrollDirection: Axis.horizontal, //これで横並びにできる。
           children: [
             const TopWidget(
-              listTitle: "Design",
-              listImagePath: 'images/AppWallets.png',
-              listDesc: 'How to design for Flutter',
+              index: 0,
               listNextScreen: WalletsScreen(),
             ),
-            const SizedBox(
-              width: 25,
-            ),
+            sizeBoxWidth(25),
             const TopWidget(
-              listTitle: "Lifecycle",
-              listImagePath: 'images/AppLifecycle.png',
-              listDesc: 'Stateless and Stateful',
+              index: 1,
               listNextScreen: LifecycleScreen(),
             ),
-            const SizedBox(
-              width: 25,
-            ),
+            sizeBoxWidth(25),
             const TopWidget(
-              listTitle: "Popup",
-              listImagePath: 'images/AppLifecycle.png',
-              listDesc: 'Modal Popup',
-              listNextScreen: LifecycleScreen(),
+              index: 2,
+              listNextScreen: PopupScreen(),
             ),
-            const SizedBox(
-              width: 25,
-            ),
+            sizeBoxWidth(25),
             const TopWidget(
-              listTitle: "Pomodors",
-              listImagePath: 'images/AppPomodors.png',
-              listDesc: 'Timer',
+              index: 3,
               listNextScreen: PomodorsScreen(),
             ),
-            const SizedBox(
-              width: 25,
-            ),
+            sizeBoxWidth(25),
             TopWidget(
-              listTitle: "Webtoon",
-              listImagePath: 'images/AppWebtoon.png',
-              listDesc: 'Webtoon app using the Never Webtoon API',
+              index: 4,
               listNextScreen: WebToonScreen(),
             ),
           ],
         ),
       ),
+    );
+  }
+
+  SizedBox sizeBoxWidth(double widthSize) {
+    return SizedBox(
+      width: widthSize,
     );
   }
 }
