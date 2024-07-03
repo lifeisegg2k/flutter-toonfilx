@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:toonflix/constant/app_dimens.dart';
 
 class RoundButton extends StatelessWidget {
   final String btnText;
@@ -28,7 +29,7 @@ class RoundButton extends StatelessWidget {
           btnText,
           style: TextStyle(
             color: btnTextColor,
-            fontSize: 20,
+            fontSize: AppDimens.fontSize20,
           ),
         ),
       ),

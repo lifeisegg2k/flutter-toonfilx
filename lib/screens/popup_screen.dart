@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:toonflix/constant/app_colors.dart';
+import 'package:toonflix/constant/app_dimens.dart';
 import 'package:toonflix/constant/app_string.dart';
 import 'package:toonflix/widgets/popup_menu.dart';
 
@@ -41,7 +42,7 @@ class _PopupScreen2State extends State<PopupScreen2> {
         title: const Text(
           AppString.titlePopup,
           style: TextStyle(
-            fontSize: 24,
+            fontSize: AppDimens.fontSize24,
             fontWeight: FontWeight.bold,
           ),
         ),
@@ -51,21 +52,25 @@ class _PopupScreen2State extends State<PopupScreen2> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             IconButton(
-              iconSize: 10,
+              iconSize: AppDimens.dSize010,
               onPressed: () => {},
               icon: const Icon(Icons.circle_outlined),
             ),
-            const SizedBox(
-              width: 3,
-            ),
+            sizeBoxWidth(AppDimens.dSize003),
             IconButton(
-              iconSize: 10,
+              iconSize: AppDimens.dSize010,
               onPressed: () => {},
               icon: const Icon(Icons.circle_outlined),
             ),
           ],
         ),
       ),
+    );
+  }
+
+  SizedBox sizeBoxWidth(double widthSize) {
+    return SizedBox(
+      width: widthSize,
     );
   }
 }

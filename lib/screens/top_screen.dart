@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:toonflix/constant/app_colors.dart';
+import 'package:toonflix/constant/app_dimens.dart';
 import 'package:toonflix/constant/app_string.dart';
 import 'package:toonflix/screens/lifecycle_screen.dart';
 import 'package:toonflix/screens/pomodors_screen.dart';
@@ -24,13 +25,13 @@ class TopScreen extends StatelessWidget {
         title: const Text(
           AppString.title,
           style: TextStyle(
-            fontSize: 24,
+            fontSize: AppDimens.fontSize24,
             fontWeight: FontWeight.bold,
           ),
         ),
       ),
       body: Padding(
-        padding: const EdgeInsets.all(20),
+        padding: const EdgeInsets.all(AppDimens.dSize020),
         child: ListView(
           scrollDirection: Axis.horizontal, //これで横並びにできる。
           children: [
@@ -38,22 +39,22 @@ class TopScreen extends StatelessWidget {
               index: 0,
               listNextScreen: WalletsScreen(),
             ),
-            sizeBoxWidth(25),
+            sizeBoxWidth(),
             const TopWidget(
               index: 1,
               listNextScreen: LifecycleScreen(),
             ),
-            sizeBoxWidth(25),
+            sizeBoxWidth(),
             const TopWidget(
               index: 2,
               listNextScreen: PopupScreen(),
             ),
-            sizeBoxWidth(25),
+            sizeBoxWidth(),
             const TopWidget(
               index: 3,
               listNextScreen: PomodorsScreen(),
             ),
-            sizeBoxWidth(25),
+            sizeBoxWidth(),
             TopWidget(
               index: 4,
               listNextScreen: WebToonScreen(),
@@ -64,7 +65,7 @@ class TopScreen extends StatelessWidget {
     );
   }
 
-  SizedBox sizeBoxWidth(double widthSize) {
+  SizedBox sizeBoxWidth({double widthSize = AppDimens.dSize025}) {
     return SizedBox(
       width: widthSize,
     );

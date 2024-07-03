@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:toonflix/constant/app_colors.dart';
+import 'package:toonflix/constant/app_dimens.dart';
 
 class CurrencyCard extends StatelessWidget {
   final String currencyName, currencyAmount, currencyUnit;
@@ -38,28 +39,28 @@ class CurrencyCard extends StatelessWidget {
                   currencyName,
                   style: TextStyle(
                     color: isInverted ? _blackColor : _whiteColor,
-                    fontSize: 32,
+                    fontSize: AppDimens.fontSize32,
                     fontWeight: FontWeight.w600,
                   ),
                 ),
-                const SizedBox(height: 20),
+                sizeBox(heightSize: AppDimens.dSize020),
                 Row(
                   children: [
                     Text(
                       currencyAmount,
                       style: TextStyle(
                         color: isInverted ? _blackColor : _whiteColor,
-                        fontSize: 20,
+                        fontSize: AppDimens.fontSize20,
                       ),
                     ),
-                    const SizedBox(width: 5),
+                    sizeBox(widthSize: AppDimens.dSize005),
                     Text(
                       currencyUnit,
                       style: TextStyle(
                         color: isInverted
                             ? _blackColor
                             : _whiteColor.withOpacity(0.8),
-                        fontSize: 20,
+                        fontSize: AppDimens.fontSize20,
                       ),
                     ),
                   ],
@@ -69,10 +70,7 @@ class CurrencyCard extends StatelessWidget {
             Transform.scale(
               scale: 2.2,
               child: Transform.translate(
-                offset: const Offset(
-                  -5,
-                  12,
-                ),
+                offset: AppDimens.offsetPattern2,
                 child: Icon(
                   currencyIcon,
                   color: isInverted ? _blackColor : _whiteColor,
@@ -83,6 +81,13 @@ class CurrencyCard extends StatelessWidget {
           ],
         ),
       ),
+    );
+  }
+
+  SizedBox sizeBox({double widthSize = 0.0, double heightSize = 0.0}) {
+    return SizedBox(
+      height: heightSize,
+      width: widthSize,
     );
   }
 }

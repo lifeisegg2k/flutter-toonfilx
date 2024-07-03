@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:toonflix/constant/app_dimens.dart';
 import 'package:toonflix/constant/top_list.dart';
 
 class TopWidget extends StatefulWidget {
@@ -50,7 +51,7 @@ class _TopWidget2State extends State<TopWidget> {
               toTitle(widget.index),
               style: TextStyle(
                 color: Theme.of(context).cardColor,
-                fontSize: 26,
+                fontSize: AppDimens.fontSize26,
                 fontWeight: FontWeight.w600,
               ),
             ),
@@ -68,7 +69,7 @@ class _TopWidget2State extends State<TopWidget> {
               toDesc(widget.index),
               style: TextStyle(
                 color: Theme.of(context).cardColor,
-                fontSize: 16,
+                fontSize: AppDimens.fontSize16,
                 fontWeight: FontWeight.w600,
               ),
             ),

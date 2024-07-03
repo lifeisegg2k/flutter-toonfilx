@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:toonflix/constant/app_dimens.dart';
 import 'package:toonflix/widgets/currency_card.dart';
 
 class TransformCard extends StatelessWidget {
   final double order;
   final String currencyName, currencyAmount, currencyUnit;
   final IconData currencyIcon;
-  final double offsetSize = -20;
 
   const TransformCard({
     super.key,
@@ -21,7 +21,7 @@ class TransformCard extends StatelessWidget {
     return Transform.translate(
       offset: Offset(
         0,
-        (offsetSize * order),
+        (AppDimens.offsetSize * order),
       ),
       child: CurrencyCard(
         currencyName: currencyName,

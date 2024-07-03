@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:toonflix/constant/app_colors.dart';
+import 'package:toonflix/constant/app_dimens.dart';
 import 'package:toonflix/constant/app_string.dart';
 import 'package:toonflix/services/api_service.dart';
 import 'package:toonflix/models/webtoon_model.dart';
@@ -24,7 +25,7 @@ class WebToonScreen extends StatelessWidget {
         title: const Text(
           "Today's WebToon",
           style: TextStyle(
-            fontSize: 24,
+            fontSize: AppDimens.fontSize24,
             fontWeight: FontWeight.bold,
           ),
         ),
@@ -42,9 +43,7 @@ class WebToonScreen extends StatelessWidget {
             // ### ListView.separated #######
             return Column(
               children: [
-                const SizedBox(
-                  height: 50,
-                ),
+                sizeBox(heightSize: AppDimens.dSize050),
                 Expanded(
                   child: makeList(snapshot),
                 ),
@@ -56,6 +55,13 @@ class WebToonScreen extends StatelessWidget {
           );
         },
       ),
+    );
+  }
+
+  SizedBox sizeBox({double widthSize = 0.0, double heightSize = 0.0}) {
+    return SizedBox(
+      height: heightSize,
+      width: widthSize,
     );
   }
 
@@ -75,9 +81,8 @@ class WebToonScreen extends StatelessWidget {
           id: webtoon.id,
         );
       },
-      separatorBuilder: (context, index) => const SizedBox(
-        width: 40,
-      ),
+      separatorBuilder: (context, index) =>
+          sizeBox(widthSize: AppDimens.dSize040),
     );
   }
 }
@@ -144,7 +149,7 @@ class _WebToonScreenOldState extends State<WebToonScreenOld> {
         title: const Text(
           AppString.titleWebtoon,
           style: TextStyle(
-            fontSize: 24,
+            fontSize: AppDimens.fontSize24,
             fontWeight: FontWeight.bold,
           ),
         ),

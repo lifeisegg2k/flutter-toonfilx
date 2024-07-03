@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:toonflix/constant/app_colors.dart';
+import 'package:toonflix/constant/app_dimens.dart';
 import 'package:toonflix/constant/app_string.dart';
 import 'package:toonflix/widgets/round_button.dart';
 import 'package:toonflix/widgets/transform_card.dart';
@@ -20,7 +21,7 @@ class WalletsScreen extends StatelessWidget {
         title: const Text(
           AppString.titleWallet,
           style: TextStyle(
-            fontSize: 24,
+            fontSize: AppDimens.fontSize24,
             fontWeight: FontWeight.bold,
           ),
         ),
@@ -31,7 +32,7 @@ class WalletsScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const SizedBox(height: 80),
+              sizeBoxHeight(AppDimens.dSize080),
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
@@ -42,7 +43,7 @@ class WalletsScreen extends StatelessWidget {
                         AppString.heySelena,
                         style: TextStyle(
                           color: AppColors.white,
-                          fontSize: 24,
+                          fontSize: AppDimens.fontSize24,
                           fontWeight: FontWeight.w600,
                         ),
                       ),
@@ -50,31 +51,31 @@ class WalletsScreen extends StatelessWidget {
                         AppString.welcomBack,
                         style: TextStyle(
                           color: AppColors.whiteOpacity08,
-                          fontSize: 18,
+                          fontSize: AppDimens.fontSize18,
                         ),
                       ),
                     ],
                   ),
                 ],
               ),
-              const SizedBox(height: 50),
+              sizeBoxHeight(AppDimens.dSize050),
               Text(
                 AppString.totalBalance,
                 style: TextStyle(
-                  fontSize: 22,
+                  fontSize: AppDimens.fontSize22,
                   color: AppColors.whiteOpacity08,
                 ),
               ),
-              const SizedBox(height: 5),
+              sizeBoxHeight(AppDimens.dSize005),
               const Text(
                 AppString.amount,
                 style: TextStyle(
-                  fontSize: 40,
+                  fontSize: AppDimens.fontSize40,
                   fontWeight: FontWeight.w600,
                   color: AppColors.white,
                 ),
               ),
-              const SizedBox(height: 30),
+              sizeBoxHeight(AppDimens.dSize030),
               const Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -90,25 +91,25 @@ class WalletsScreen extends StatelessWidget {
                   ),
                 ],
               ),
-              const SizedBox(height: 100),
+              sizeBoxHeight(AppDimens.dSize100),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
                   const Text(AppString.wallets,
                       style: TextStyle(
-                        fontSize: 36,
+                        fontSize: AppDimens.fontSize36,
                         fontWeight: FontWeight.w600,
                         color: AppColors.white,
                       )),
                   Text(AppString.viewAll,
                       style: TextStyle(
-                        fontSize: 20,
+                        fontSize: AppDimens.fontSize20,
                         color: AppColors.whiteOpacity08,
                       )),
                 ],
               ),
-              const SizedBox(height: 20),
+              sizeBoxHeight(AppDimens.dSize020),
               const TransformCard(
                 currencyName: AppString.euroTitle,
                 currencyAmount: AppString.euroAmount,
@@ -134,6 +135,12 @@ class WalletsScreen extends StatelessWidget {
           ),
         ),
       ),
+    );
+  }
+
+  SizedBox sizeBoxHeight(double heightSize) {
+    return SizedBox(
+      height: heightSize,
     );
   }
 }

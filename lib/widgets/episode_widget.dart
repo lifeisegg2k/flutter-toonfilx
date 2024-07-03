@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:toonflix/constant/app_colors.dart';
+import 'package:toonflix/constant/app_dimens.dart';
 import 'package:toonflix/constant/app_urls.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:toonflix/models/webtoon_episode_model.dart';
@@ -55,7 +56,7 @@ class Episode extends StatelessWidget {
                     episode.title,
                     style: const TextStyle(
                       color: AppColors.white,
-                      fontSize: 16,
+                      fontSize: AppDimens.fontSize16,
                     ),
                   ),
                 ),

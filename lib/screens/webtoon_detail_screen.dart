@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:toonflix/constant/app_colors.dart';
+import 'package:toonflix/constant/app_dimens.dart';
 import 'package:toonflix/constant/app_string.dart';
 import 'package:toonflix/constant/app_urls.dart';
 import 'package:toonflix/services/api_service.dart';
@@ -86,7 +87,7 @@ class _WebtoonDetailScreenState extends State<WebtoonDetailScreen> {
         title: Text(
           widget.title,
           style: const TextStyle(
-            fontSize: 24,
+            fontSize: AppDimens.fontSize24,
             fontWeight: FontWeight.bold,
           ),
         ),
@@ -109,7 +110,7 @@ class _WebtoonDetailScreenState extends State<WebtoonDetailScreen> {
                         boxShadow: const [
                           BoxShadow(
                             blurRadius: 3,
-                            offset: Offset(10, 10),
+                            offset: AppDimens.offsetPattern1,
                             color: AppColors.black38,
                           ),
                         ],
@@ -124,9 +125,7 @@ class _WebtoonDetailScreenState extends State<WebtoonDetailScreen> {
                   ),
                 ],
               ),
-              const SizedBox(
-                height: 20,
-              ),
+              sizeBoxHeight(AppDimens.dSize020),
               FutureBuilder(
                 future: webtoon,
                 builder: (context, snapshot) {
@@ -137,17 +136,15 @@ class _WebtoonDetailScreenState extends State<WebtoonDetailScreen> {
                         Text(
                           '${snapshot.data!.genre} / ${snapshot.data!.age}',
                           style: const TextStyle(
-                            fontSize: 16,
+                            fontSize: AppDimens.fontSize16,
                             fontWeight: FontWeight.w700,
                           ),
                         ),
-                        const SizedBox(
-                          height: 10,
-                        ),
+                        sizeBoxHeight(AppDimens.dSize010),
                         Text(
                           snapshot.data!.about,
                           style: const TextStyle(
-                            fontSize: 16,
+                            fontSize: AppDimens.fontSize16,
                           ),
                         ),
                       ],
@@ -156,9 +153,7 @@ class _WebtoonDetailScreenState extends State<WebtoonDetailScreen> {
                   return const Text(AppString.shorthand);
                 },
               ),
-              const SizedBox(
-                height: 20,
-              ),
+              sizeBoxHeight(AppDimens.dSize020),
               FutureBuilder(
                 future: episodes,
                 builder: (context, snapshot) {
@@ -182,6 +177,12 @@ class _WebtoonDetailScreenState extends State<WebtoonDetailScreen> {
           ),
         ),
       ),
+    );
+  }
+
+  SizedBox sizeBoxHeight(double heightSize) {
+    return SizedBox(
+      height: heightSize,
     );
   }
 }

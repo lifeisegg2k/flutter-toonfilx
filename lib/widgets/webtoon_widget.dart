@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:toonflix/constant/app_colors.dart';
+import 'package:toonflix/constant/app_dimens.dart';
 import 'package:toonflix/constant/app_urls.dart';
 import 'package:toonflix/screens/webtoon_detail_screen.dart';
 
@@ -41,7 +42,7 @@ class Webtoon extends StatelessWidget {
                 boxShadow: const [
                   BoxShadow(
                     blurRadius: 3,
-                    offset: Offset(10, 10),
+                    offset: AppDimens.offsetPattern1,
                     color: AppColors.black38,
                   ),
                 ],
@@ -54,18 +55,22 @@ class Webtoon extends StatelessWidget {
               ),
             ),
           ),
-          const SizedBox(
-            height: 10,
-          ),
+          sizeBoxHeight(AppDimens.dSize010),
           Text(
             title,
             style: const TextStyle(
-              fontSize: 22,
+              fontSize: AppDimens.fontSize22,
               fontWeight: FontWeight.w600,
             ),
           ),
         ],
       ),
+    );
+  }
+
+  SizedBox sizeBoxHeight(double heightSize) {
+    return SizedBox(
+      height: heightSize,
     );
   }
 }

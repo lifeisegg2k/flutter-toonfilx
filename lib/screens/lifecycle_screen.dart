@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:toonflix/constant/app_colors.dart';
+import 'package:toonflix/constant/app_dimens.dart';
 import 'package:toonflix/constant/app_string.dart';
 
 class LifecycleScreen extends StatefulWidget {
@@ -38,7 +39,7 @@ class _LifecycleScreenState extends State<LifecycleScreen> {
         title: const Text(
           AppString.titleLifeCycle,
           style: TextStyle(
-            fontSize: 24,
+            fontSize: AppDimens.fontSize24,
             fontWeight: FontWeight.bold,
           ),
         ),
@@ -49,7 +50,7 @@ class _LifecycleScreenState extends State<LifecycleScreen> {
           children: [
             showTitle ? const MyLargeTitle() : const Text(AppString.nothing),
             IconButton(
-              iconSize: 40,
+              iconSize: AppDimens.dSize040,
               onPressed: toggleTitle,
               icon: const Icon(Icons.remove_red_eye),
             ),
@@ -59,7 +60,7 @@ class _LifecycleScreenState extends State<LifecycleScreen> {
             ),
             for (var n in numbers) Text('$n'),
             IconButton(
-              iconSize: 40,
+              iconSize: AppDimens.dSize040,
               onPressed: onClicked,
               icon: const Icon(Icons.add_box_rounded),
             ),
@@ -99,7 +100,7 @@ class _MyLargeTitleState extends State<MyLargeTitle> {
     return Text(
       AppString.titleLarge,
       style: TextStyle(
-        fontSize: 30,
+        fontSize: AppDimens.fontSize30,
         color: Theme.of(context).textTheme.titleLarge?.color ?? AppColors.blue,
       ),
     );
