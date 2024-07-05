@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:toonflix/constant/app_colors.dart';
-import 'package:toonflix/constant/app_dimens.dart';
-import 'package:toonflix/constant/app_string.dart';
+import 'package:toonflix/constant/constant.dart';
 
 class LifecycleScreen extends StatefulWidget {
   const LifecycleScreen({super.key});

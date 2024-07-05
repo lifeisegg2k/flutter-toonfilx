@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:toonflix/constant/app_dimens.dart';
+import 'package:toonflix/constant/constant.dart';
 
 class RoundButton extends StatelessWidget {
   final String btnText;

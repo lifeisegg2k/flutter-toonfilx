@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:toonflix/constant/app_colors.dart';
-import 'package:toonflix/constant/app_dimens.dart';
-import 'package:toonflix/constant/app_string.dart';
+import 'package:toonflix/constant/constant.dart';
 import 'package:toonflix/screens/lifecycle_screen.dart';
 import 'package:toonflix/screens/pomodoros_screen.dart';
 import 'package:toonflix/screens/popup_screen.dart';
+import 'package:toonflix/screens/ui_widget_screen.dart';
 import 'package:toonflix/screens/wallets_screen.dart';
 import 'package:toonflix/screens/webtoon_screen.dart';
 import 'package:toonflix/widgets/top_widget.dart';
@@ -41,13 +40,18 @@ class TopScreen extends StatelessWidget {
             ),
             sizeBoxWidth(),
             const TopWidget(
+              index: 5,
+              listNextScreen: UiWidgetScreen(),
+            ),
+            sizeBoxWidth(),
+            const TopWidget(
               index: 1,
-              listNextScreen: LifecycleScreen(),
+              listNextScreen: PopupScreen(),
             ),
             sizeBoxWidth(),
             const TopWidget(
               index: 2,
-              listNextScreen: PopupScreen(),
+              listNextScreen: LifecycleScreen(),
             ),
             sizeBoxWidth(),
             const TopWidget(

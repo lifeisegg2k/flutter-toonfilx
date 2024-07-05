@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:toonflix/constant/app_colors.dart';
-import 'package:toonflix/constant/app_dimens.dart';
-import 'package:toonflix/constant/app_urls.dart';
+import 'package:toonflix/constant/constant.dart';
 import 'package:toonflix/screens/webtoon_detail_screen.dart';
 
 class Webtoon extends StatelessWidget {

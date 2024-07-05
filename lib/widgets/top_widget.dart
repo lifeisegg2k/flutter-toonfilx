@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:toonflix/constant/app_dimens.dart';
+import 'package:toonflix/constant/constant.dart';
 import 'package:toonflix/constant/top_list.dart';
 
 class TopWidget extends StatefulWidget {
@@ -13,10 +13,10 @@ class TopWidget extends StatefulWidget {
   });
 
   @override
-  State<TopWidget> createState() => _TopWidget2State();
+  State<TopWidget> createState() => _TopWidgetState();
 }
 
-class _TopWidget2State extends State<TopWidget> {
+class _TopWidgetState extends State<TopWidget> {
   String toTitle(int index) {
     return TopList.listTitle[index];
   }

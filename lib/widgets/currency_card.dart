@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:toonflix/constant/app_colors.dart';
-import 'package:toonflix/constant/app_dimens.dart';
+import 'package:toonflix/constant/constant.dart';
 
 class CurrencyCard extends StatelessWidget {
   final String currencyName, currencyAmount, currencyUnit;
