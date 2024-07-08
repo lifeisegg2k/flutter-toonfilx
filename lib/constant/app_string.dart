@@ -8,6 +8,7 @@ class AppString {
   static const String titleLifeCycle = 'LifeCycle';
   static const String titlePomodoros = 'Pomodoros';
   static const String titleWebtoon = "Today's WebToon";
+  static const String titleUiWidget = "UI Widget";
 
   static const String prefsKey = 'prefsKey';
   static const String shorthand = '...';

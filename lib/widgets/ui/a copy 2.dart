@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:toonflix/widgets/preview_source_widget.dart';
 
-class SafeAreaWidget extends StatelessWidget {
-  const SafeAreaWidget({super.key});
+class AppBarWidget extends StatelessWidget {
+  const AppBarWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -10,18 +10,11 @@ class SafeAreaWidget extends StatelessWidget {
       initialIndex: 0, // 初期選択タブ
       length: 2, // タブの数
       child: PreviewSourceWidget(
-        title: 'SafeArea',
-        imgPath: 'images/UiSafeArea.png',
+        title: 'AppBar',
+        imgPath: 'images/UiAppBar.png',
         source: '''
-    return SafeArea(
-      child: Scaffold(
-        appBar: AppBar(
-          title: const Text('SafeArea'),
-        ),
-        backgroundColor: Colors.red,
-      ),
-    );,''',
-        hSize: 200,
+''',
+        hSize: 400,
         wSize: 350,
       ),
     );

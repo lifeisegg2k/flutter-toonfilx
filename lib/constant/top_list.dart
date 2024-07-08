@@ -13,7 +13,7 @@ class TopList {
     'images/AppLifecycle.png',
     'images/AppPomodoros.png',
     'images/AppWebtoon.png',
-    'images/AppWebtoon.png',
+    'images/UiWidget.png',
   ];
   static List<String> listDesc = [
     'How to design for Flutter',
