@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:toonflix/widgets/preview_source_widget.dart';
 
-class TextNIconWidget extends StatelessWidget {
-  const TextNIconWidget({super.key});
+class TextIconWidget extends StatelessWidget {
+  const TextIconWidget({super.key});
 
   @override
   Widget build(BuildContext context) {

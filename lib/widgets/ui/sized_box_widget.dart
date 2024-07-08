@@ -1,39 +1,17 @@
 import 'package:flutter/material.dart';
-class ContainerNSizedBoxWidget extends StatelessWidget {
-  const ContainerNSizedBoxWidget({super.key});
+
+class SizedBoxWidget extends StatelessWidget {
+  const SizedBoxWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Container & SizedBox'),
+        title: const Text('SizedBox'),
       ),
-      body: Column(
+      body: const Column(
         children: [
           Center(
-            child: Container(
-              height: 200,
-              width: 200,
-              decoration: BoxDecoration(
-                color: Colors.red,
-                border: Border.all(
-                  width: 2,
-                  color: Colors.black,
-                ),
-              ),
-              child: const Align(
-                alignment: Alignment.center,
-                child: Text(
-                  'Red Box',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 40,
-                  ),
-                ),
-              ),
-            ),
-          ),
-          const Center(
             child: SizedBox(
               height: 200,
               width: 300,
@@ -49,7 +27,7 @@ class ContainerNSizedBoxWidget extends StatelessWidget {
               ),
             ),
           ),
-          const Center(
+          Center(
             child: SizedBox.expand(
               child: Card(
                 color: Colors.red,

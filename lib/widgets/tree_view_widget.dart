@@ -2,11 +2,13 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:animated_tree_view/animated_tree_view.dart';
 import 'package:toonflix/constant/constant.dart';
-import 'package:toonflix/widgets/ui/align_n_center_widget.dart';
+import 'package:toonflix/widgets/ui/align_center_widget.dart';
 import 'package:toonflix/widgets/ui/app_bar_widget.dart';
+import 'package:toonflix/widgets/ui/container_widget.dart';
 import 'package:toonflix/widgets/ui/safe_area_widget.dart';
+import 'package:toonflix/widgets/ui/sized_box_widget.dart';
 import 'package:toonflix/widgets/ui/tab_bar_view_widget.dart';
-import 'package:toonflix/widgets/ui/text_n_icon_widget.dart';
+import 'package:toonflix/widgets/ui/text_icon_widget.dart';
 import 'package:toonflix/widgets/ui/image_widget.dart';
 
 const showSnackBar = false;
@@ -130,11 +132,11 @@ final sampleTree = TreeNode.root()
           TreeNode(key: "SafeArea", data: const SafeAreaWidget()),
           TreeNode(key: "AppBar", data: const AppBarWidget()),
           TreeNode(key: "TabBar, TabBarView", data: const TabBarViewWidget()),
-          TreeNode(key: "Text & Icon", data: const TextNIconWidget()),
+          TreeNode(key: "Text & Icon", data: const TextIconWidget()),
           TreeNode(key: "Image", data: const ImageWidget()),
-          TreeNode(key: "Align & Center", data: const AlignNCenterWidget()),
-          TreeNode(key: "Container"),
-          TreeNode(key: "SizedBox"),
+          TreeNode(key: "Align & Center", data: const AlignCenterWidget()),
+          TreeNode(key: "Container", data: const ContainerWidget()),
+          TreeNode(key: "SizedBox", data: const SizedBoxWidget()),
           TreeNode(key: "Padding"),
           TreeNode(key: "Column"),
           TreeNode(key: "Row"),

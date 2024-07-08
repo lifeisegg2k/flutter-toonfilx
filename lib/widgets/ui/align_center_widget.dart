@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:toonflix/widgets/preview_source_widget.dart';
 
-class AlignNCenterWidget extends StatelessWidget {
-  const AlignNCenterWidget({super.key});
+class AlignCenterWidget extends StatelessWidget {
+  const AlignCenterWidget({super.key});
 
   @override
   Widget build(BuildContext context) {

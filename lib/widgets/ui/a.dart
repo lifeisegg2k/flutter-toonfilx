@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:toonflix/widgets/preview_source_widget.dart';
 
-class AppBarWidget extends StatelessWidget {
-  const AppBarWidget({super.key});
+class A extends StatelessWidget {
+  const A({super.key});
 
   @override
   Widget build(BuildContext context) {
