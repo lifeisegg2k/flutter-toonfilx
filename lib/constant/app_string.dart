@@ -4,10 +4,11 @@ class AppString {
       'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36';
   static const String title = 'Lecture - Flutter';
   static const String titleWallet = 'Design - Wallet';
-  static const String titleLifeCycle = 'LifeCycle';
-  static const String titlePomodors = 'Pomodors';
   static const String titlePopup = 'Popup';
+  static const String titleLifeCycle = 'LifeCycle';
+  static const String titlePomodoros = 'Pomodoros';
   static const String titleWebtoon = "Today's WebToon";
+  static const String titleUiWidget = "UI Widget";
 
   static const String prefsKey = 'prefsKey';
   static const String shorthand = '...';

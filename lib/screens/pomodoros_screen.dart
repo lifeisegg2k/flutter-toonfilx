@@ -1,17 +1,15 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:toonflix/constant/app_colors.dart';
-import 'package:toonflix/constant/app_dimens.dart';
-import 'package:toonflix/constant/app_string.dart';
+import 'package:toonflix/constant/constant.dart';
 
-class PomodorsScreen extends StatefulWidget {
-  const PomodorsScreen({super.key});
+class PomodorosScreen extends StatefulWidget {
+  const PomodorosScreen({super.key});
 
   @override
-  State<PomodorsScreen> createState() => _PomodorsScreenState();
+  State<PomodorosScreen> createState() => _PomodorosScreenState();
 }
 
-class _PomodorsScreenState extends State<PomodorsScreen> {
+class _PomodorosScreenState extends State<PomodorosScreen> {
   static const twentyFiveMinutes = 1500;
   int totalSeconds = twentyFiveMinutes;
   bool isRunning = false;
@@ -69,7 +67,7 @@ class _PomodorsScreenState extends State<PomodorsScreen> {
         backgroundColor: AppColors.lightBlue,
         foregroundColor: AppColors.white,
         title: const Text(
-          "Pomodors",
+          AppString.titlePomodoros,
           style: TextStyle(
             fontSize: AppDimens.fontSize24,
             fontWeight: FontWeight.bold,
@@ -138,7 +136,7 @@ class _PomodorsScreenState extends State<PomodorsScreen> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Text(
-                          AppString.titlePomodors,
+                          AppString.titlePomodoros,
                           style: TextStyle(
                             fontSize: AppDimens.fontSize20,
                             fontWeight: FontWeight.w600,

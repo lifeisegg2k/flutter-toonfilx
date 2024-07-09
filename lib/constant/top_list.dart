@@ -1,23 +1,26 @@
 class TopList {
   static List<String> listTitle = [
     "Design",
-    "Lifecycle",
     "Popup",
-    "Pomodors",
+    "Lifecycle",
+    "Pomodoros",
     "Webtoon",
+    "UI Widget",
   ];
   static List<String> listImagePath = [
-    'images/AppWallets.png',
-    'images/AppLifecycle.png',
-    'images/AppPopup.png',
-    'images/AppPomodors.png',
-    'images/AppWebtoon.png',
+    'images/app/AppWallets.png',
+    'images/app/AppPopup.png',
+    'images/app/AppLifecycle.png',
+    'images/app/AppPomodoros.png',
+    'images/app/AppWebtoon.png',
+    'images/app/UiWidget.png',
   ];
   static List<String> listDesc = [
     'How to design for Flutter',
-    'Stateless and Stateful',
     'Modal Popup',
+    'Stateless and Stateful',
     'Timer',
     'Webtoon app using the Never Webtoon API',
+    'UI Widget',
   ];
 }

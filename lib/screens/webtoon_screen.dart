@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:toonflix/constant/app_colors.dart';
-import 'package:toonflix/constant/app_dimens.dart';
-import 'package:toonflix/constant/app_string.dart';
+import 'package:toonflix/constant/constant.dart';
 import 'package:toonflix/services/api_service.dart';
 import 'package:toonflix/models/webtoon_model.dart';
 import 'package:toonflix/widgets/webtoon_widget.dart';

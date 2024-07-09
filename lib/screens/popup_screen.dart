@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:toonflix/constant/app_colors.dart';
-import 'package:toonflix/constant/app_dimens.dart';
-import 'package:toonflix/constant/app_string.dart';
+import 'package:toonflix/constant/constant.dart';
 import 'package:toonflix/widgets/popup_menu.dart';
 
 class PopupScreen extends StatelessWidget {

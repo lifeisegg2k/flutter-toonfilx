@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:toonflix/constant/app_dimens.dart';
+import 'package:toonflix/constant/constant.dart';
 import 'package:toonflix/widgets/currency_card.dart';
 
 class TransformCard extends StatelessWidget {
