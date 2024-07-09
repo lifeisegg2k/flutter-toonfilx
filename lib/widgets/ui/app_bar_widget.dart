@@ -11,7 +11,7 @@ class AppBarWidget extends StatelessWidget {
       length: 2, // タブの数
       child: PreviewSourceWidget(
         title: 'AppBar',
-        imgPath: 'images/UiAppBar.png',
+        imgPath: 'images/ui/UiAppBar.png',
         source: '''
     return Scaffold(
       appBar: AppBar(

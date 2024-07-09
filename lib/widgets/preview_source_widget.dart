@@ -58,7 +58,7 @@ class PreviewSourceWidget extends StatelessWidget {
                 ),
                 SizedBox(
                   height: hSize,
-                  width: 40,
+                  width: 35,
                   child: Card(
                     color: AppColors.lightBlue,
                     child: Align(
@@ -70,7 +70,7 @@ class PreviewSourceWidget extends StatelessWidget {
                 SingleChildScrollView(
                   child: SizedBox(
                     height: hSize,
-                    width: wSize,
+                    width: wSize * 0.9,
                     child: Card(
                       color: AppColors.lightBlue,
                       child: Align(

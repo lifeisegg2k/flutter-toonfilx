@@ -4,9 +4,29 @@ import 'package:animated_tree_view/animated_tree_view.dart';
 import 'package:toonflix/constant/constant.dart';
 import 'package:toonflix/widgets/ui/align_center_widget.dart';
 import 'package:toonflix/widgets/ui/app_bar_widget.dart';
+import 'package:toonflix/widgets/ui/button2_widget.dart';
+import 'package:toonflix/widgets/ui/button1_widget.dart';
+import 'package:toonflix/widgets/ui/card_tooltip_widget.dart';
+import 'package:toonflix/widgets/ui/circular_progress_indicator_widget.dart';
+import 'package:toonflix/widgets/ui/column_widget.dart';
 import 'package:toonflix/widgets/ui/container_widget.dart';
+import 'package:toonflix/widgets/ui/data_table_widget.dart';
+import 'package:toonflix/widgets/ui/divider_widget.dart';
+import 'package:toonflix/widgets/ui/drawer_widget.dart';
+import 'package:toonflix/widgets/ui/fitted_box_widget.dart';
+import 'package:toonflix/widgets/ui/grid_view_builder_widget.dart';
+import 'package:toonflix/widgets/ui/grid_view_widget.dart';
+import 'package:toonflix/widgets/ui/refresh_indicator_widget.dart';
+import 'package:toonflix/widgets/ui/list_tile_widget.dart';
+import 'package:toonflix/widgets/ui/list_view_builder_widget.dart';
+import 'package:toonflix/widgets/ui/list_view_widget.dart';
+import 'package:toonflix/widgets/ui/padding_widget.dart';
+import 'package:toonflix/widgets/ui/row_widget.dart';
 import 'package:toonflix/widgets/ui/safe_area_widget.dart';
+import 'package:toonflix/widgets/ui/scroll_bar_widget.dart';
+import 'package:toonflix/widgets/ui/single_child_scroll_view_widget.dart';
 import 'package:toonflix/widgets/ui/sized_box_widget.dart';
+import 'package:toonflix/widgets/ui/stack_widget.dart';
 import 'package:toonflix/widgets/ui/tab_bar_view_widget.dart';
 import 'package:toonflix/widgets/ui/text_icon_widget.dart';
 import 'package:toonflix/widgets/ui/image_widget.dart';
@@ -129,48 +149,128 @@ final sampleTree = TreeNode.root()
     TreeNode(key: "Basic Widgets")
       ..addAll(
         [
-          TreeNode(key: "SafeArea", data: const SafeAreaWidget()),
-          TreeNode(key: "AppBar", data: const AppBarWidget()),
-          TreeNode(key: "TabBar, TabBarView", data: const TabBarViewWidget()),
-          TreeNode(key: "Text & Icon", data: const TextIconWidget()),
-          TreeNode(key: "Image", data: const ImageWidget()),
-          TreeNode(key: "Align & Center", data: const AlignCenterWidget()),
-          TreeNode(key: "Container", data: const ContainerWidget()),
-          TreeNode(key: "SizedBox", data: const SizedBoxWidget()),
-          TreeNode(key: "Padding"),
-          TreeNode(key: "Column"),
-          TreeNode(key: "Row"),
-          TreeNode(key: "FittedBox"),
+          TreeNode(
+            key: "SafeArea",
+            data: const SafeAreaWidget(),
+          ),
+          TreeNode(
+            key: "AppBar",
+            data: const AppBarWidget(),
+          ),
+          TreeNode(
+            key: "TabBar, TabBarView",
+            data: const TabBarViewWidget(),
+          ),
+          TreeNode(
+            key: "Text & Icon",
+            data: const TextIconWidget(),
+          ),
+          TreeNode(
+            key: "Image",
+            data: const ImageWidget(),
+          ),
+          TreeNode(
+            key: "Align & Center",
+            data: const AlignCenterWidget(),
+          ),
+          TreeNode(
+            key: "Container",
+            data: const ContainerWidget(),
+          ),
+          TreeNode(
+            key: "SizedBox",
+            data: const SizedBoxWidget(),
+          ),
+          TreeNode(
+            key: "Padding",
+            data: const PaddingWidget(),
+          ),
+          TreeNode(
+            key: "Column",
+            data: const ColumnWidget(),
+          ),
+          TreeNode(
+            key: "Row",
+            data: const RowWidget(),
+          ),
+          TreeNode(
+            key: "FittedBox",
+            data: const FittedBoxWidget(),
+          ),
         ],
       ),
     TreeNode(key: "ButtonWidgets")
       ..addAll(
         [
-          TreeNode(key: "TextButton"),
-          TreeNode(key: "OutlinedButton"),
-          TreeNode(key: "ElevatedButton"),
-          TreeNode(key: "FilledButton"),
-          TreeNode(key: "RawMaterialButton"),
-          TreeNode(key: "IconButton"),
-          TreeNode(key: "FloatingActionButton"),
+          TreeNode(
+            key: "Text/Outlined/Elevated/FilledButton",
+            data: const Button1Widget(),
+          ),
+          TreeNode(
+            key: "RawMaterial/Icon/FloatingActionButton",
+            data: const Button2Widget(),
+          ),
         ],
       ),
     TreeNode(key: "ViewWidgets")
       ..addAll(
         [
-          TreeNode(key: "Stack"),
-          TreeNode(key: "Card"),
-          TreeNode(key: "ListTile"),
-          TreeNode(key: "ListView"),
-          TreeNode(key: "GridView"),
-          TreeNode(key: "SingleChildScrollView"),
-          TreeNode(key: "ScrollBar"),
-          TreeNode(key: "CircularProgressIndicator"),
-          TreeNode(key: "RefreshIndicator"),
-          TreeNode(key: "Drawer"),
-          TreeNode(key: "DataTable"),
-          TreeNode(key: "Tooltip"),
-          TreeNode(key: "Divider"),
+          TreeNode(
+            key: "Stack",
+            data: const StackWidget(),
+          ),
+          TreeNode(
+            key: "Card & Tooltip",
+            data: const CardTooltipWidget(),
+          ),
+          TreeNode(
+            key: "ListTile",
+            data: const ListTileWidget(),
+          ),
+          TreeNode(
+            key: "ListView",
+            data: const ListViewWidget(),
+          ),
+          TreeNode(
+            key: "ListViewBuilder",
+            data: const ListViewBuilderWidget(),
+          ),
+          TreeNode(
+            key: "GridView",
+            data: const GridViewWidget(),
+          ),
+          TreeNode(
+            key: "GridViewBuilder",
+            data: const GridViewBuilderWidget(),
+          ),
+          TreeNode(
+            key: "SingleChildScrollView",
+            data: const SingleChildScrollViewWidget(),
+          ),
+          TreeNode(
+            key: "ScrollBar",
+            data: const ScrollBarWidget(),
+          ),
+          TreeNode(
+            key: "CircularProgressIndicator",
+            data: const CircularProgressIndicatorWidget(),
+          ),
+          TreeNode(
+            key: "RefreshIndicator",
+            data: const RefreshIndicatorWidget(),
+          ),
+          TreeNode(
+            key: "Drawer",
+            data: const DrawerWidget(),
+          ),
+          TreeNode(
+            key: "DataTable",
+            data: const DataTableWidget(),
+          ),
+          TreeNode(
+            key: "Divider",
+            data: const DividerWidget(),
+          ),
         ],
       ),
   ]);

@@ -11,7 +11,7 @@ class AlignCenterWidget extends StatelessWidget {
       length: 2, // タブの数
       child: PreviewSourceWidget(
         title: 'AppBar',
-        imgPath: 'images/UiAlignCenter.png',
+        imgPath: 'images/ui/UiAlignCenter.png',
         source: '''
     return Scaffold(
       appBar: AppBar(

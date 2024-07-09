@@ -11,7 +11,7 @@ class SafeAreaWidget extends StatelessWidget {
       length: 2, // タブの数
       child: PreviewSourceWidget(
         title: 'SafeArea',
-        imgPath: 'images/UiSafeArea.png',
+        imgPath: 'images/ui/UiSafeArea.png',
         source: '''
     return SafeArea(
       child: Scaffold(

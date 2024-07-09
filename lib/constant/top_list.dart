@@ -8,12 +8,12 @@ class TopList {
     "UI Widget",
   ];
   static List<String> listImagePath = [
-    'images/AppWallets.png',
-    'images/AppPopup.png',
-    'images/AppLifecycle.png',
-    'images/AppPomodoros.png',
-    'images/AppWebtoon.png',
-    'images/UiWidget.png',
+    'images/app/AppWallets.png',
+    'images/app/AppPopup.png',
+    'images/app/AppLifecycle.png',
+    'images/app/AppPomodoros.png',
+    'images/app/AppWebtoon.png',
+    'images/app/UiWidget.png',
   ];
   static List<String> listDesc = [
     'How to design for Flutter',

@@ -1,10 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:toonflix/widgets/preview_source_widget.dart';
 
 class ContainerWidget extends StatelessWidget {
   const ContainerWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
+    return const DefaultTabController(
+      initialIndex: 0, // 初期選択タブ
+      length: 2, // タブの数
+      child: PreviewSourceWidget(
+        title: 'Container',
+        imgPath: 'images/ui/UiContainer.png',
+        source: '''
     return Scaffold(
       appBar: AppBar(
         title: const Text('Container'),
@@ -35,6 +43,10 @@ class ContainerWidget extends StatelessWidget {
             ),
           ),
         ],
+      ),
+    );''',
+        hSize: 700,
+        wSize: 350,
       ),
     );
   }

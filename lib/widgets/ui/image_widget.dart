@@ -11,7 +11,7 @@ class ImageWidget extends StatelessWidget {
       length: 2, // タブの数
       child: PreviewSourceWidget(
         title: 'Image',
-        imgPath: 'images/UiImage.png',
+        imgPath: 'images/ui/UiImage.png',
         source: '''
     return Scaffold(
       appBar: AppBar(
@@ -29,7 +29,7 @@ class ImageWidget extends StatelessWidget {
           ),
           Center(
             child: Image.asset(
-              'images/AppWallets.png',
+              'images/app/AppWallets.png',
               width: 260,
             ),
           ),

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:toonflix/widgets/preview_source_widget.dart';
 
-class SizedBoxWidget extends StatelessWidget {
-  const SizedBoxWidget({super.key});
+class CardTooltipWidget extends StatelessWidget {
+  const CardTooltipWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -10,36 +10,39 @@ class SizedBoxWidget extends StatelessWidget {
       initialIndex: 0, // 初期選択タブ
       length: 2, // タブの数
       child: PreviewSourceWidget(
-        title: 'SizedBox',
-        imgPath: 'images/ui/UiSizedBox.png',
+        title: 'Card & Tooltip',
+        imgPath: 'images/ui/UiCardTooltip.png',
         source: '''
     return Scaffold(
       appBar: AppBar(
-        title: const Text('SizedBox'),
+        title: const Text('Card & Tooltip'),
       ),
       body: const Column(
         children: [
           Center(
             child: SizedBox(
-              // SizedBox.expand(
-              height: 200,
-              width: 300,
+              height: 100,
+              width: 200,
               child: Card(
-                color: Colors.red,
+                elevation: 10,
                 child: Align(
                   alignment: Alignment.center,
-                  child: Text(
-                    'height: 200\nwidth: 300',
-                    style: TextStyle(color: Colors.white),
-                  ),
+                  child: Text('Card'),
                 ),
               ),
+            ),
+          ),
+          SizedBox(height: 10),
+          Center(
+            child: Tooltip(
+              message: 'Press and hold.',
+              child: Text('Long press here.'),
             ),
           ),
         ],
       ),
     );''',
-        hSize: 700,
+        hSize: 620,
         wSize: 350,
       ),
     );
